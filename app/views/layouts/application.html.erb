@@ -14,18 +14,18 @@
       <div class="header-bar">
        <div class="nav">
          <%# ログイン中は以下を表示%>
-          <%# if user_signed_in? %>
+          <% if user_signed_in? %>
         <div class="nav_right">
-            <%#= link_to "ログアウト", method: :hoge, class: :nav_btn %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav_btn %>
         </div>
-          <%# else %>
+          <% else %>
          <%# ログイン中は上記を表示%>
          <%# ログインしてない時は以下を表示 %>
         <div class="nav_right">
-            <%= link_to "ログイン", method: :hoge, class: :nav_btn %>
-            <%= link_to "新規登録", method: :hoge, class: :nav_btn %>
+            <%= link_to "ログイン", new_user_session_path, class: :nav_btn %>
+            <%= link_to "新規登録", new_user_registration_path, class: :nav_btn %>
         </div>
-          <%# end %>
+          <% end %>
          <%# ログインしてない時は以下を表示 %>
        </div>
       </div>

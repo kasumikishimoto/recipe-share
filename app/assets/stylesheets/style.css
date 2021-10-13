@@ -6,7 +6,7 @@
 /* ヘッダー */
 
 .header-bar {
-  background-color: #faeac9;
+  background-color: #d1baad;
   height: 65px;
   color: #ffffff;
   font-size: 50px;
@@ -32,15 +32,51 @@ h1 {
   margin: 15px 80px 0 0;
 }
 
+
+/* Sign in */
+
+.form-list {
+  height: 100vh;
+  overflow: scroll;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.field {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 25px 40%;
+}
+
+.actions {
+  text-align: center;
+}
+
+/* エラーメッセージ */
+.error {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* トップページ */
+
+
 /* フッター  */
 
 footer {
   background-color: #999;
   padding: 20px 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
+
 p {
   text-align: center;
   color: #ffffff;
