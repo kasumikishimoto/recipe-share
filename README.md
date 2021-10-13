@@ -26,7 +26,6 @@
 | title                | string     | null: false                    |
 | material             | text       | null: false                    |
 | text                 | text       | null: false                    |
-| memo                 | text       | null: false                    |
 | image                |            | null: false                    |
 | user                 | references | null: false, foreign_key: true |
 
@@ -72,6 +71,12 @@ recipe-share
  ## 実装した機能についての画像やGIFおよびその説明
 
  ## 実装予定の機能
+ - ユーザー管理機能
+ - 投稿機能
+ - 投稿にタグ付け
+ - 検索機能
+ - コメント機能
+ - マイページにてカレンダーで日々の食事の管理をアイコンで行える
 
  ## データベース設計
 
