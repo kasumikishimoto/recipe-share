@@ -1,0 +1,48 @@
+
+ * {
+  box-sizing: border-box;
+}
+ 
+/* ヘッダー */
+
+.header-bar {
+  background-color: #faeac9;
+  height: 65px;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_right{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 15px 80px 0 0;
+}
+
+/* フッター  */
+
+footer {
+  background-color: #999;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 10px;
+}
