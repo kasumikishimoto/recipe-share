@@ -32,8 +32,12 @@ h1 {
   margin: 15px 80px 0 0;
 }
 
+.new_post_btn {
+  text-decoration: none;
+}
 
-/* Sign in */
+
+/* user関連 */
 
 .form-list {
   height: 100vh;
@@ -58,6 +62,10 @@ h2 {
   text-align: center;
 }
 
+.nav_btn {
+  text-decoration: none;
+}
+
 /* エラーメッセージ */
 .error {
   text-align: center;
@@ -66,13 +74,52 @@ h2 {
 
 /* トップページ */
 
+/* 新規投稿ボタン */
+
+.new_post_btn {
+  font-size: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+  padding: 5px 5px;
+  margin: 10px 0 0 50px;
+}
+
+.post_btn {
+  text-decoration: none;
+}
+
+/* 新規投稿ページ */
+
+.field_type {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.title_field {
+  height: 35px;
+}
+
+.material_field {
+  height: 60px;
+}
+
+.text_field {
+  height: 100px;
+}
 
 /* フッター  */
+
+div#wrap{
+  position: relative;
+  height:auto !important; /*IE6対策*/
+  height: 100%; /*IE6対策*/
+  min-height: 100%;
+}
 
 footer {
   background-color: #999;
   padding: 20px 0;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
