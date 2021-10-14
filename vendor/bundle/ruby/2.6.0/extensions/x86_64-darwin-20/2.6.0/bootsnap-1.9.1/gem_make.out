@@ -1,0 +1,15 @@
+current directory: /Users/kasumi/projects/recipe-share/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+/Users/kasumi/.rbenv/versions/2.6.5/bin/ruby -I /Users/kasumi/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20211014-16546-14g7g2o.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kasumi/projects/recipe-share/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/kasumi/projects/recipe-share/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/kasumi/projects/recipe-share/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20211014-16546-3a01fa/bootsnap
