@@ -1,6 +1,36 @@
+/* リセットCSS */
 
- * {
+* {
   box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -97,6 +127,7 @@ h2 {
 
 .field_type {
   height: 100vh;
+  width: 100vw;
   overflow: scroll;
 }
 
@@ -110,6 +141,7 @@ h2 {
 
 .text_field {
   height: 100px;
+  width: 80%;
 }
 
 /* フッター  */
