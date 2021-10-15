@@ -2,6 +2,12 @@
  * {
   box-sizing: border-box;
 }
+
+.wrapper {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
  
 /* ヘッダー */
 
@@ -41,7 +47,6 @@ h1 {
 
 .form-list {
   height: 100vh;
-  overflow: scroll;
 }
 
 h2 {
@@ -109,19 +114,13 @@ h2 {
 
 /* フッター  */
 
-div#wrap{
-  position: relative;
-  height:auto !important; /*IE6対策*/
-  height: 100%; /*IE6対策*/
-  min-height: 100%;
-}
-
-footer {
+/* .footer {
   background-color: #999;
   padding: 20px 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 p {
@@ -129,3 +128,4 @@ p {
   color: #ffffff;
   font-size: 10px;
 }
+*/
