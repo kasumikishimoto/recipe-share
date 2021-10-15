@@ -34,7 +34,6 @@ a {
 }
 
 .wrapper {
-  overflow: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -109,6 +108,24 @@ h2 {
 
 /* トップページ */
 
+.recipe-contents {
+  position: relative;
+  padding: 0 30px;
+}
+
+.recipe-image {
+  width: 25vh;
+  height: 25vh;
+}
+
+.recipe_title {
+  font-size: 2.5vh;
+}
+
+h3{
+  font-weight: normal;
+}
+
 /* 新規投稿ボタン */
 
 .new_post_btn {
@@ -128,7 +145,6 @@ h2 {
 .field_type {
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
 }
 
 .title_field {
@@ -145,6 +161,10 @@ h2 {
 }
 
 /* フッター  */
+
+.actions {
+  padding-bottom: 50px;
+}
 
 /* .footer {
   background-color: #999;
