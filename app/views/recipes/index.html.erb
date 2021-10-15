@@ -1,5 +1,22 @@
 <h1>タイトル</h1>
 
-
-<%# ファイルをモデルから指定する場合 %>
-<%#= image_tag モデル.画像ファイル %>
+<%# レシピの表示 %>
+<% @recipes.each do |recipe| %>
+  <%= link_to recipe_path(recipe.id) do %>
+    <%# ファイルをモデルから指定する場合 %>
+    <%#= image_tag モデル.画像ファイル, class: "recipe-img" %>
+    <% end %>
+      
+    <div class="recipe-info">
+        <h3 class="recipe-title">
+          <%= recipe.title %>
+        </h3>
+        <h3 class="recipe-category">
+          <%= recipe.category.name %>
+        </h3>
+        <h3 class="time_require">
+          <%= recipe.time_require.name %>
+        </h3>
+    </div>
+  <% end %>
+<% end %>
