@@ -1,31 +1,30 @@
 <main class ="main">
   <div class="show__wrapper">
-    <p class="show__hedding">
-      <%= link_to @recipe.title %>
-    </p>
-      <%= link_to "#{@recipe.user.nickname}さんのレシピ" %>
-      <% if user_signed_in? && current_user.id == @recipe.user.id %>
-        <div class="btn__display">
-          <%= link_to "編集", edit_recipe_path(@recipe.id), class: :edit__btn %>
-          <%= link_to "削除", recipe_path(@recipe.id), method: :delete, class: :delete__btn %>
-        </div>
-      <% end %>
-
-      <div class="recipe__image">
-        <%= image_tag recipe.image %>
-      </div>
+  　 <div class="hedding">
       <div class="recipe_category">
-        <p class="recipe__category">カテゴリー</p>
+        <p class="recipe__category">カテゴリー : 
         <%= @recipe.category.name %>
+        </p>
       </div>
       <div class="recipe_time_require">
-        <p class="recipe__time__rquire">所要時間</p>
+        <p class="recipe__time__rquire">所要時間 : 
         <%= @recipe.time_require.name %>
+        </p>
+      </div>
+    </div>
+  
+    <p class="show__hedding">
+      <%= @recipe.title %>
+    </p>
+    <div class="show__recipe">
+      <div class="recipe__user">
+      <%= link_to "Posted by#{@recipe.user.nickname}" %>
+      </div>
+
+      <div class="recipe__image">
+        <%= image_tag @recipe.image %>
       </div>
       <div class="recipe__body">
-        <div class="recipe__title">
-          <%= @recipe.title %>
-        </div>
         <div class="recipe__materials">
           <p class="recipe__material">材料</p>
           <%= @recipe.material %>
@@ -34,6 +33,14 @@
           <p class="recipe__description">調理方法</p>
           <%= @recipe.text %>
         </div>
+
+      <% if user_signed_in? && current_user.id == @recipe.user.id %>
+        <div class="btn__display">
+          <%= link_to "編集", edit_recipe_path(@recipe.id), method: :get, class: :edit__btn %>
+          <%= link_to "削除", recipe_path(@recipe.id), method: :delete, class: :delete__btn %>
+        </div>
+      <% end %>
       </div>
+    </div>
   </div>
 </main>
