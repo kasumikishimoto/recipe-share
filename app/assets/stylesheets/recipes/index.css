@@ -1,0 +1,154 @@
+/* ヘッダー */
+
+.header-bar {
+  background-color: #d1baad;
+  height: 65px;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_right{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 15px 80px 0 0;
+}
+
+.new_post_btn {
+  text-decoration: none;
+}
+
+
+/* user関連 */
+
+.form-list {
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.field {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 25px 40%;
+}
+
+.actions {
+  text-align: center;
+}
+
+.nav_btn {
+  text-decoration: none;
+}
+
+/* エラーメッセージ */
+.error {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* トップページ */
+
+.recipe-contents {
+  position: relative;
+  padding: 25% 30px 0 40px;
+  display: flex;
+}
+
+.recipe-images {
+  width: 25vh;
+  height: 25vh;
+}
+
+.recipe-title {
+  font-size: 2.5vh;
+}
+
+h3{
+  font-weight: normal;
+}
+
+.recipe-info {
+  display: inline;
+  justify-content: space-between;
+  margin: 45px;
+}
+
+.over-view {
+  text-align: center;
+}
+
+/* 新規投稿ボタン */
+
+.new_post_btn {
+  font-size: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+  padding: 5px 5px;
+  margin: 10px 0 0 50px;
+}
+
+.post_btn {
+  text-decoration: none;
+}
+
+/* 新規投稿ページ */
+
+.field_type {
+  height: 100vh;
+  width: 100vw;
+}
+
+.title_field {
+  height: 35px;
+}
+
+.material_field {
+  height: 60px;
+}
+
+.text_field {
+  height: 100px;
+  width: 80%;
+}
+
+/* フッター  */
+
+.actions {
+  padding-bottom: 50px;
+}
+
+/* .footer {
+  background-color: #999;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 10px;
+}
+*/
