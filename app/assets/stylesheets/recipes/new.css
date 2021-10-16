@@ -1,0 +1,22 @@
+
+.new-recipe {
+  margin: 30px;
+}
+
+.field_type {
+  height: 100vh;
+  width: 100vw;
+}
+
+.title_field {
+  height: 35px;
+}
+
+.material_field {
+  height: 60px;
+}
+
+.text_field {
+  height: 100px;
+  width: 80%;
+}
