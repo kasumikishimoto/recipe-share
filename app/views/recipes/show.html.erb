@@ -1,3 +1,39 @@
+<main class ="main">
+  <div class="show__wrapper">
+    <p class="show__hedding">
+      <%= link_to @recipe.title %>
+    </p>
+      <%= link_to "#{@recipe.user.nickname}さんのレシピ" %>
+      <% if user_signed_in? && current_user.id == @recipe.user.id %>
+        <div class="btn__display">
+          <%= link_to "編集", edit_recipe_path(@recipe.id), class: :edit__btn %>
+          <%= link_to "削除", recipe_path(@recipe.id), method: :delete, class: :delete__btn %>
+        </div>
+      <% end %>
 
-<%# ファイルをモデルから指定する場合 %>
-<%#= image_tag モデル.画像ファイル %>
+      <div class="recipe__image">
+        <%= image_tag recipe.image %>
+      </div>
+      <div class="recipe_category">
+        <p class="recipe__category">カテゴリー</p>
+        <%= @recipe.category.name %>
+      </div>
+      <div class="recipe_time_require">
+        <p class="recipe__time__rquire">所要時間</p>
+        <%= @recipe.time_require.name %>
+      </div>
+      <div class="recipe__body">
+        <div class="recipe__title">
+          <%= @recipe.title %>
+        </div>
+        <div class="recipe__materials">
+          <p class="recipe__material">材料</p>
+          <%= @recipe.material %>
+        </div>
+        <div class="description">
+          <p class="recipe__description">調理方法</p>
+          <%= @recipe.text %>
+        </div>
+      </div>
+  </div>
+</main>
