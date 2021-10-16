@@ -110,10 +110,11 @@ h2 {
 
 .recipe-contents {
   position: relative;
-  padding: 0 30px;
+  padding: 25% 30px 0 40px;
+  display: flex;
 }
 
-.recipe-image {
+.recipe-images {
   width: 25vh;
   height: 25vh;
 }
@@ -124,6 +125,16 @@ h2 {
 
 h3{
   font-weight: normal;
+}
+
+.recipe-info {
+  display: inline;
+  justify-content: space-between;
+  margin: 45px;
+}
+
+.over-view {
+  text-align: center;
 }
 
 /* 新規投稿ボタン */
