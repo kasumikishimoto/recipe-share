@@ -1,5 +1,9 @@
 /* ヘッダー */
 
+.main-container h1 {
+  margin: 30px 0;
+}
+
 .header-bar {
   background-color: #d1baad;
   height: 65px;

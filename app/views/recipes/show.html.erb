@@ -1,6 +1,6 @@
 <main class ="main">
   <div class="show__wrapper">
-  　 <div class="hedding">
+    <div class="hedding">
       <div class="recipe_category">
         <p class="recipe__category">カテゴリー : 
         <%= @recipe.category.name %>
@@ -20,7 +20,8 @@
       <div class="recipe__user">
       <%= link_to "Posted by#{@recipe.user.nickname}" %>
       </div>
-
+    
+    <div class="separate__main">
       <div class="recipe__image">
         <%= image_tag @recipe.image %>
       </div>
@@ -41,6 +42,7 @@
         </div>
       <% end %>
       </div>
+    </div>
     </div>
   </div>
 </main>
