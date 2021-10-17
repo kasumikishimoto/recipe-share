@@ -10,7 +10,8 @@ class Category < ActiveHash::Base
     {id: 7 , name: 'イタリアン'},
     {id: 8 , name: 'フレンチ'},
     {id: 9 , name: 'エスニック'},
-    {id: 10 , name: 'お菓子・スイーツ'}
+    {id: 10 , name: 'お弁当'},
+    {id: 11 , name: 'お菓子・スイーツ'}
   ]
 
   include ActiveHash::Associations
