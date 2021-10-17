@@ -1,0 +1,28 @@
+/* user関連 */
+
+.form-list {
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.field {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 25px 40%;
+}
+
+.actions {
+  text-align: center;
+}
+
+.nav_btn {
+  text-decoration: none;
+}
+
