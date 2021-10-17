@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :move_to_index, expect:[:index, :show]
+  before_action :move_to_index, except:[:index, :show]
 
   def index
     @recipes = Recipe.order('created_at DESC')
