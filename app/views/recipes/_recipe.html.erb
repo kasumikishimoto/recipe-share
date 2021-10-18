@@ -1,0 +1,19 @@
+    <%= link_to recipe_path(recipe.id) do %>
+      <div class="list">
+        <div class="recipe-image-content">
+          <%= image_tag recipe.image, class: "recipe-images" %>
+        </div>
+
+        <div class="over-view">
+          <h3 class="recipe-title">
+            <%= recipe.title %>
+          </h3>
+          <h3 class="recipe-category">
+            <%= recipe.category.name %>
+          </h3>
+          <h3 class="time_require">
+            <%= recipe.time_require.name %>
+          </h3>
+        </div>
+      </div>
+    <% end %>

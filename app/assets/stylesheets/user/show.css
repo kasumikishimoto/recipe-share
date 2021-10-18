@@ -1,0 +1,14 @@
+
+.user__wrapper {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
+
+.user__recipes {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 300px 30px 30px 30px;
+  overflow-x: scroll;
+  flex-direction: row-reverse;
+}
