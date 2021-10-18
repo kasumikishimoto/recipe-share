@@ -39,6 +39,24 @@ h1 {
 
 /* トップページ */
 
+#sbox {
+  height: 50px;
+  width: 600px;
+  max-width: 270px;
+}
+
+#sbtn {
+  width: 70px;
+  height: 50px;
+  outline: none;
+}
+
+#sbtn:hover {
+  background-color: rgb(253, 174, 160);
+}
+
+/* レシピ一覧表示 */
+
 .main-container {
   height: 100vh;
   margin: 60px;
@@ -55,9 +73,6 @@ h1 {
 .search-bar-contents {
   text-align: center;
   margin: 30px;
-}
-
-.search-form {
 }
 
 .recipe-contents {
