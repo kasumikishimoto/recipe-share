@@ -5,7 +5,7 @@ main {
 
 .hedding {
   font-size: 15px;
-  margin-bottom: 15px;
+  margin: 30px;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -23,22 +23,30 @@ main {
 }
 
 .recipe__image {
-  width: 60vw;
-  height: 60vh;
-  margin: 30px;
+  width: 30vw;
+  height: 30vh;
+  margin: 60px;
   object-fit: cover;
 }
 
 .separate__main {
+  margin: 30px;
   display: flex;
 }
 
 .recipe__body {
   margin: 60px 0 60px 180px;
+  padding: 30px;
+
 }
 
 .recipe__body p{
   text-align: center;
   padding-top: 15px;
   font-size: 20px;
+  padding-top: 30px;
+}
+
+.comments {
+  margin-bottom: 120px;
 }

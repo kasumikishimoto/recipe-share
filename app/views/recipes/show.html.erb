@@ -1,4 +1,4 @@
-<main class ="main">
+<div class ="main">
   <div class="show__wrapper">
     <div class="hedding">
       <div class="recipe_category">
@@ -16,6 +16,7 @@
     <p class="show__hedding">
       <%= @recipe.title %>
     </p>
+
     <div class="show__recipe">
       <div class="recipe__user">
       <%= link_to "Posted by#{@recipe.user.nickname}", user_path(@recipe.user_id), class: :recipe_user_btn %>
@@ -23,7 +24,7 @@
     
     <div class="separate__main">
       <div class="recipe__image">
-        <%= image_tag @recipe.image %>
+        <%= image_tag @recipe.image %><br/>
       </div>
       <div class="recipe__body">
         <div class="recipe__materials">
@@ -34,6 +35,7 @@
           <p class="recipe__description">調理方法</p>
           <%= @recipe.text %>
         </div>
+      </div>
 
       <% if user_signed_in? && current_user.id == @recipe.user.id %>
         <div class="btn__display">
@@ -41,8 +43,27 @@
           <%= link_to "削除", recipe_path(@recipe.id), method: :delete, class: :delete__btn %>
         </div>
       <% end %>
-      </div>
     </div>
     </div>
   </div>
-</main>
+
+
+  <%# コメント投稿機能 %>
+    <div class="comment__container">
+        <%= form_with(model: [@recipe, @comment], local: true) do |f| %>
+          <%= f.text_area :text, placeholder: "コメントする", rows: "2" %>
+          <%= f.submit '送信' %>
+        <% end %>
+
+        <div class="comments">
+          <h4>＜コメント一覧＞</h4>
+            <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+          </p>
+            <% end %>
+        </div>
+    </div>
+
+</div>

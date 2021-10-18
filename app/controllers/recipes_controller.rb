@@ -20,6 +20,8 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
+    @comment = Comment.new
+    @comments = @recipe.comments.includes(:user)
   end
 
   def edit
@@ -43,6 +45,7 @@ class RecipesController < ApplicationController
       redirect_to root_path
     end
   end
+
 
   private
 
