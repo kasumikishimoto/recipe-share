@@ -11,13 +11,17 @@
 
 .title_field {
   height: 35px;
+  outline: none;
+
 }
 
 .material_field {
   height: 60px;
+  outline: none;
 }
 
 .text_field {
   height: 100px;
   width: 80%;
+  outline: none;
 }
