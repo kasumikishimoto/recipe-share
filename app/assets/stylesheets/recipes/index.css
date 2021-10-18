@@ -28,7 +28,8 @@ h1 {
   display: inline-block;
   text-decoration: none;
   font-size: 20px;
-  margin: 15px 80px 0 0;
+  margin: 15px 80px 25px 15px;
+  background-color: #ffffff;
 }
 
 .new_post_btn {
@@ -40,6 +41,7 @@ h1 {
 
 .main-container {
   height: 100vh;
+  margin: 60px;
 }
 
 .subtitle {
@@ -48,6 +50,14 @@ h1 {
   margin: 1vh 0;
   text-decoration: none;
   font-weight: bold;
+}
+
+.search-bar-contents {
+  text-align: center;
+  margin: 30px;
+}
+
+.search-form {
 }
 
 .recipe-contents {
