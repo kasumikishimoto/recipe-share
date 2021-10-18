@@ -4,6 +4,7 @@ class Recipe < ApplicationRecord
   belongs_to :category
   belongs_to :time_require
   has_one_attached :image
+  has_many :comments
 
   with_options presence: true do
     validates :title
