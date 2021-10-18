@@ -38,6 +38,10 @@ h1 {
 
 /* トップページ */
 
+.main-container {
+  height: 100vh;
+}
+
 .subtitle {
   text-align: center;
   font-size: 3vh;
@@ -48,18 +52,25 @@ h1 {
 
 .recipe-contents {
   display: flex;
-  margin: 300px 30px 60px;
+  flex-wrap: nowrap;
+  margin: 300px 30px 30px 30px;
+  overflow-x: scroll;
+
+}
+
+.list {
+  width: 200px;
 }
 
 .recipe-image-content {
-  margin: 30px;
+  margin: 20px;
 }
 
 .recipe-images {
-  width: 25vw;
-  height: 25vh;
+  width: 30vw;
+  height: 30vh;
   object-fit: cover;
-}
+ }
 
 .recipe-title {
   font-size: 2.5vh;
@@ -71,12 +82,15 @@ h3{
 
 .recipe-info {
   display: inline;
-  justify-content: space-between;
   margin: 45px;
 }
 
 .over-view {
   text-align: center;
+}
+
+.time_require {
+  margin-bottom: 30px;
 }
 
 /* 新規投稿ボタン */

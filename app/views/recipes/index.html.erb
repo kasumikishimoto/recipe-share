@@ -1,33 +1,33 @@
 <div class="main-container">
-  <h1>タイトル</h1>
+  <h1>うちで食べよう</h1>
 
 <%# レシピ一覧の表示 %>
 <div class="recipe__content">
   <div class="subtitle">
   新着レシピ
   </div>
-  <ul class="recipe-contents">
+  <div class="recipe-contents">
     <% @recipes.each do |recipe| %>
-    <%= link_to recipe_path(recipe.id) do %>    
-      <li class="list">
+    <%= link_to recipe_path(recipe.id) do %>
+      <div class="list">
         <div class="recipe-image-content">
           <%= image_tag recipe.image, class: "recipe-images" %>
         </div>
 
-      <div class="over-view">
-        <h3 class="recipe-title">
-          <%= recipe.title %>
-        </h3>
-        <h3 class="recipe-category">
-          <%= recipe.category.name %>
-        </h3>
-        <h3 class="time_require">
-          <%= recipe.time_require.name %>
-        </h3>
+        <div class="over-view">
+          <h3 class="recipe-title">
+            <%= recipe.title %>
+          </h3>
+          <h3 class="recipe-category">
+            <%= recipe.category.name %>
+          </h3>
+          <h3 class="time_require">
+            <%= recipe.time_require.name %>
+          </h3>
+        </div>
       </div>
-      </li>
     <% end %>
     <% end %>
-  </ul>
+  </div>
 </div>
 </div>
