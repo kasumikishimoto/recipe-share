@@ -16,7 +16,7 @@
 ## Association
 
 - has_many :recipes
-- has
+- has_many :comments
 
 
 ## recipesテーブル
@@ -35,6 +35,19 @@
 
 - belongs_to :user
 - has_many :comments
+
+## commentsテーブル
+
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| user      | references | null: false, foreign_key: true |
+| recipe    | references | null: false, foreign_key: true |
+| comment   | text       | null: false                    |
+
+## Association
+
+- belongs_to :user
+- belongs_to :recipe
 
 
 ## calendersテーブル
