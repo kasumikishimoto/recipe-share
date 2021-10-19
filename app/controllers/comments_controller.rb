@@ -2,7 +2,10 @@ class CommentsController < ApplicationController
  
   def create
     @comment = Comment.create(comment_params)
-    redirect_to "/recipes/#{@comment.recipe_id}"
+       redirect_to "/recipes/#{@comment.recipe_id}"
+    if @comment.save
+      ActionCable.server.broadcast 'comment_channel', content: @comment
+    end
   end
 
   private
