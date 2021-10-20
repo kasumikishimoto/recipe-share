@@ -9,17 +9,26 @@
   </div>
 </div>
 
-<div class="field">
-  <div class="field_time_require">
+<div class="active-hash">
+  <div class="field">
+    <div class="field_time_require">
     所要時間<br/>
-    <%= f.collection_select(:time_require_id, TimeRequire.all, :id, :name, {}, {class:"collection-select"}) %>
+      <%= f.collection_select(:time_require_id, TimeRequire.all, :id, :name, {}, {class:"collection-select"}) %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="field_category">
+    カテゴリー<br/>
+      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"collection-select"}) %>
+    </div>
   </div>
 </div>
 
 <div class="field">
-  <div class="field_category">
-    カテゴリー<br/>
-    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"collection-select"}) %>
+  <div class="tag-field", id='tag-field'>
+    <%= f.label :name, "タグ", class:"tag-name" %><br />
+    <%= f.text_field :name,  placeholder: "#時短レシピ(複数入力可)", class:"input-tag" %>
   </div>
 </div>
 
@@ -29,7 +38,7 @@
     <%= f.text_field :title, id:"cook_title", class:"title_field" %>
   </div>
 </div>
-  
+
 <div class="field">
   <div class="field_material">
     <%= f.label :material, "材料" %><br />
