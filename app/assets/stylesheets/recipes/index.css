@@ -2,6 +2,20 @@
 
 .main-container h1 {
   margin: 30px 0;
+  font-size: 60px;
+  font-family: 'Kaisei Decol', serif;
+  color: rgb(216, 0, 0);
+}
+
+.main-container h2 {
+  font-size: 30px;
+  margin: 30px;
+  font-family: 'Kaisei Decol', serif;
+  color: #695143;
+}
+
+.main-container span{
+  color: rgb(241, 184, 145);
 }
 
 .header-bar {
@@ -69,6 +83,8 @@ h1 {
   margin: 1vh 0;
   text-decoration: none;
   font-weight: bold;
+  color: #695143;
+  font-family: 'Kaisei Decol', serif;
 }
 
 .search-bar-contents {

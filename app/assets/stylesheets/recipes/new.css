@@ -25,3 +25,11 @@
   width: 80%;
   outline: none;
 }
+
+.tag_field {
+  text-align: center;
+  outline: none;
+  height: 100px;
+  width: 80%;
+}
+
