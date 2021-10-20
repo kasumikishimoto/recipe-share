@@ -1,4 +1,11 @@
 <div class="main">
+
+  <ul>
+    <% @recipe.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+  
   <div class="inner">
     <h2 class="new-recipe">新しいレシピを投稿する</h2>
       <%= render partial:"form" %>

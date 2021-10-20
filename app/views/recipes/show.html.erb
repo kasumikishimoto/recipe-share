@@ -1,17 +1,26 @@
 <div class ="main">
   <div class="show__wrapper">
+
     <div class="hedding">
-      <div class="recipe_category">
-        <p class="recipe__category">カテゴリー : 
-        <%= @recipe.category.name %>
-        </p>
-      </div>
       <div class="recipe_time_require">
         <p class="recipe__time__rquire">所要時間 : 
-        <%= @recipe.time_require.name %>
+          <%= @recipe.time_require.name %>
+        </p>
+      </div>
+      <div class="recipe_category">
+        <p class="recipe__category">カテゴリー : 
+          <%= @recipe.category.name %>
         </p>
       </div>
     </div>
+
+    <ul class="tag">
+      <li class="tag-list">
+        <% @recipe.tags.each do |tag| %>
+          <%= tag.name %>
+        <%end%>
+      </li>
+    </ul>
   
     <p class="show__hedding">
       <%= @recipe.title %>
@@ -19,7 +28,7 @@
 
     <div class="show__recipe">
       <div class="recipe__user">
-      <%= link_to "Posted by#{@recipe.user.nickname}", user_path(@recipe.user_id), class: :recipe_user_btn %>
+        <%= link_to "Posted by#{@recipe.user.nickname}", user_path(@recipe.user_id), class: :recipe_user_btn %>
       </div>
     
     <div class="separate__main">

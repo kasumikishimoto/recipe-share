@@ -50,3 +50,10 @@ main {
 .comments {
   margin-bottom: 120px;
 }
+
+.tag-list {
+  font-size: large;
+  text-align: center;
+  margin: 30px;
+  color: rgb(99, 80, 86);
+}

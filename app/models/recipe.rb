@@ -9,10 +9,7 @@ class Recipe < ApplicationRecord
   has_many :tags, through: :recipe_tag_relations
 
   with_options presence: true do
-    validates :title
-    validates :material
-    validates :text
     validates :category_id, numericality: { other_than: 0 } 
-    validates :time_require_id, numericality: { other_than: 0, message: "can't be blank" } 
+    validates :time_require_id, numericality: { other_than: 0, message: "can't be blank" }
   end
 end
