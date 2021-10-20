@@ -35,6 +35,9 @@
 
 - belongs_to :user
 - has_many :comments
+- has_many :recipe_tag_relations
+- has_many :tags, through: :recipe_tag_relations
+
 
 ## commentsテーブル
 
@@ -50,18 +53,29 @@
 - belongs_to :recipe
 
 
-## calendersテーブル
+## tagsテーブル
 
 | Column               | Type       | Options                        |
 | -------------------- | ---------- | ------------------------------ |
-| category             | string     | null: false                    |
-| user_id              | references | null: false, foreign_key: true |
+| name                 | string     | null: false, uniquness: true   |
 
 ## Association
 
-- has_one :user
+- has_many :recipe_tag_relations
+- has_many :recipes, through: :recipe_tag_relations
 
 
+## recipe_tag_relationsテーブル
+
+| Column               | Type       | Options                        |
+| -------------------- | ---------- | ------------------------------ |
+| tag_id               | references | null: false, foreign_key: true |
+| recipe_id            | references | null: false, foreign_key: true |
+
+## Association
+
+- belongs_to :recipe
+- belongs_to :tag
 
 
 ## アプリケーション名
