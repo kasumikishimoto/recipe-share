@@ -4,7 +4,9 @@ class CommentsController < ApplicationController
     @comment = Comment.create(comment_params)
        redirect_to "/recipes/#{@comment.recipe_id}"
     if @comment.save
-      ActionCable.server.broadcast 'comment_channel', content: @comment
+      #ActionCable.server.broadcast 'comment_channel', content: @comment
+      comment_html = render_to_string partial: 'comment', locals: {comment: @comment}
+      ActionCable.server.broadcast 'comment_channel', content: comment_html
     end
   end
 

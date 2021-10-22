@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :move_to_index, except:[:index, :show]
+  before_action :move_to_index, except:[:index, :show, :research]
 
   def index
     @recipes = Recipe.order('created_at DESC')
@@ -46,6 +46,10 @@ class RecipesController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def research
+    @recipes = Recipe.research(params[:keyword])
+   end
 
   def search
     return nil if params[:keyword] == ""

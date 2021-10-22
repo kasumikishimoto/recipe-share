@@ -10,10 +10,12 @@ consumer.subscriptions.create("CommentChannel", {
   },
 
   received(data) {
-    const html = `<p>${data.content.comment}</p>`;
+    console.log("[comment_channel] data=%o", data);
     const comments = document.getElementById('comments');
-    const newComment = document.getElementById('recipe_comment_comment');
-    comments.insertAdjacentHTML('afterbegin', html);
+    const newComment = document.getElementById('comment_comment');
+    comments.insertAdjacentHTML('beforeend', data.content);
     newComment.value = '';
+    const submitBtn = document.getElementById('comment_submit');
+    submitBtn.disabled = false;
    }
 });
