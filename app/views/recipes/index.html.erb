@@ -2,13 +2,12 @@
   <h1>コンカツ</h1>
   <h2>献立活動、略して <span>コンカツ</span> 初めてみませんか？</h2>
 
-    <div class='search-bar-contents'>
-      <form id="search" action="自分のサイトのURL">
-        <input id="sbox"  id="s" name="s" type="text" placeholder="#ズボラ飯" />
-        <input id="sbtn" type="submit" value="検索" />
-      </form>
-    </div>
-
+  <div class='search-bar-contents'>
+    <%= form_with(url: research_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
+      <%= form.text_field :keyword, placeholder: "ズボラ飯", class: "sbox" %>
+      <%= form.submit "検索", class: "sbtn" %>
+    <% end %>
+  </div>
 
 <%# レシピ一覧の表示 %>
 <div class="recipe__content">
@@ -17,7 +16,7 @@
   </div>
   <div class="recipe-contents">
     <% @recipes.each do |recipe| %>
-    <%= render partial:"recipe", locals: {recipe: recipe} %>
+      <%= render partial:"recipe", locals: {recipe: recipe} %>
     <% end %>
   </div>
 </div>

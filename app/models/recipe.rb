@@ -8,8 +8,20 @@ class Recipe < ApplicationRecord
   has_many :recipe_tag_relations
   has_many :tags, through: :recipe_tag_relations
 
+
   with_options presence: true do
     validates :category_id, numericality: { other_than: 0 } 
     validates :time_require_id, numericality: { other_than: 0, message: "can't be blank" }
   end
+
+  def self.research(research)
+    if research != ""
+      Recipe.joins(:tags).where('tags.name LIKE ?',  "%#{research}%")
+      #Recipe.joins(:tags).where('tags.name': research)
+      #Recipe.joins(:recipe_tag_relations).where('text LIKE(?)', "%#{research}%")
+    else
+      Recipe.all
+    end
+  end
+
 end

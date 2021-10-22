@@ -1,0 +1,16 @@
+<div class="research-list">
+
+  <div class="research-bar">
+    <%= form_with(url: research_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
+      <%= form.text_field :keyword, placeholder: "ズボラ飯", class: "sbox" %>
+      <%= form.submit "検索", class: "sbtn" %>
+    <% end %>
+  </div>
+
+  <div class="contents-row">
+    <% @recipes.each do |recipe| %>
+      <%= render partial: "recipe", locals: { recipe: recipe } %>
+    <% end %>
+  </div>
+
+</div>
