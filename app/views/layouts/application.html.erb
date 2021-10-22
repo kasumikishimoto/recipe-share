@@ -8,31 +8,46 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap" rel="stylesheet">
-  </head>
+   </head>
 
   <body>
   <div class="wrapper">
     <header class="header">
       <div class="header-bar">
-       <div class="nav">
-        <div class="new_post_btn">
-          <%= link_to "投稿する", new_recipe_path, class: :post_btn %>
-        </div>
-         <%# ログイン中は以下を表示%>
+        <div class="nav">
+          <div class="new_post_btn">
+            <%= link_to "投稿する", new_recipe_path, class: :post_btn %>
+          </div>
+
+          <%# ログイン中は以下を表示%>
           <% if user_signed_in? %>
-        <div class="nav_right">
+          <div class="nav_right">
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav_btn %>
-        </div>
+          </div>
           <% else %>
-         <%# ログイン中は上記を表示%>
-         <%# ログインしてない時は以下を表示 %>
-        <div class="nav_right">
-            <%= link_to "ログイン", new_user_session_path, class: :nav_btn %>
-            <%= link_to "新規登録", new_user_registration_path, class: :nav_btn %>
-        </div>
+          <%# ログイン中は上記を表示%>
+
+          <%# ログインしてない時は以下を表示 %>
+          <div class="nav_right">
+            <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
+            <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+          </div>
           <% end %>
-         <%# ログインしてない時は以下を表示 %>
+          <%# ログインしてない時は以下を表示 %>
+
+          <%# ハンバーガーメニューの表示 %>
+          <ul class="menu">
+            <li class="menu__single">
+              <a href="#" class="init-bottom">食の豆知識</a>
+                <ul class="menu__second-level">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#">Child Menu</a></li>
+                </ul>
+             </li>
+          </ul>
+          <%# ハンバーガーメニューの表示 %>
+
        </div>
       </div>
     </header>
