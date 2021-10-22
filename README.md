@@ -78,6 +78,19 @@
 - belongs_to :tag
 
 
+## likesテーブル
+
+| Column               | Type       | Options                        |
+| -------------------- | ---------- | ------------------------------ |
+| tag_id               | references | null: false, foreign_key: true |
+| recipe_id            | references | null: false, foreign_key: true |
+
+## Association
+
+- belongs_to :recipe
+- belongs_to :user
+
+
 ## アプリケーション名
 recipe-share
 
@@ -103,9 +116,12 @@ recipe-share
  - ユーザー管理機能
  - 投稿機能
  - 投稿にタグ付け
- - 検索機能
+ - 検索機能(タグに紐付いたレシピの表示)
  - コメント機能
- - マイページにてカレンダーで日々の食事の管理をアイコンで行える
+
+ - いいね機能
+ - 選択した写真のプレビュー機能
+ - 投稿時に複数の写真の選択を可能にする機能
 
  ## データベース設計
 
