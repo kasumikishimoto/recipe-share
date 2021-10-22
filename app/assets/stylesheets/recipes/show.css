@@ -57,3 +57,7 @@ main {
   margin: 30px;
   color: rgb(99, 80, 86);
 }
+
+.comment___list {
+  display: flex;
+}

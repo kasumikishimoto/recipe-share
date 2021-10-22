@@ -1,2 +1,4 @@
-  <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
-    <p><%= comment.comment %></p>
+  <div class="comment___list">
+    <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+    <%= comment.comment %>
+  </div>
