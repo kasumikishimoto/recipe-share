@@ -3,7 +3,7 @@ class Recipe < ApplicationRecord
   belongs_to :user
   belongs_to :category
   belongs_to :time_require
-  has_one_attached :image
+  has_many_attached :images
   has_many :comments
   has_many :recipe_tag_relations
   has_many :tags, through: :recipe_tag_relations

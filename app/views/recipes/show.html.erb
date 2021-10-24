@@ -33,8 +33,15 @@
     
     <div class="separate__main">
       <div class="recipe__image">
-        <%= image_tag @recipe.image %><br/>
+        <%#= image_tag @recipe.image %><br/>
+      
+      <% @recipe.images.each do |image| %>
+        <%= image_tag image, class:'images' %>
+      <% end %>
       </div>
+
+
+
       <div class="recipe__body">
         <div class="recipe__materials">
           <p class="recipe__material">材料</p>

@@ -4,11 +4,19 @@
 
 <div class="field">
   <div class="field_image">
-    <%= f.label :image, "料理の画像" %><br />
-    <%= f.file_field :image, id:"cook_image" %>
+
+    <%= f.label :images, "料理の画像" %><br />
+    <%= f.file_field :images, name: 'recipe[images][]', id:"cook_image" %>
       <div id="image-list"></div>
+
+    <% @recipe.images.each do |image| %>
+    <%# @recipe.images %>
+      <%= image_tag image, class:'images' %>
+    <% end %>
+
   </div>
 </div>
+
 
 <div class="active-hash">
   <div class="field">

@@ -1,7 +1,10 @@
     <%= link_to recipe_path(recipe.id) do %>
       <div class="list">
+        
         <div class="recipe-image-content">
-          <%= image_tag recipe.image, class: "recipe-images" %>
+          <% recipe.images.find do |image| %>
+            <%= image_tag image, class:"recipe-images" %>
+          <% end %>
         </div>
 
         <div class="over-view">

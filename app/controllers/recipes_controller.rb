@@ -6,13 +6,26 @@ class RecipesController < ApplicationController
   end
 
   def new
-    @recipe = RecipesTag.new
+    @recipe = Recipe.new
   end
 
   def create
-    @recipe = RecipesTag.new(recipe_params)
-    if @recipe.valid? 
-       @recipe.save
+    @recipe = Recipe.new(recipe_params)
+    # params[:recipe][:name] # => "#test #coffee"
+    # tags = params[:recipe][:name].split(" ") # => ["#test", "#coffee"]
+    # tags = tags.map do |tag|
+    #   tag.where(name: tag).first_or_initialize
+    # end
+    # 
+    # if @recipe.valid? & params[:recipe][:name].presence
+    
+    tag = Tag.where(name: params[:recipe][:name]).first_or_initialize
+
+    if @recipe.valid? & tag.valid?
+      @recipe.save
+      tag.save
+
+      RecipeTagRelation.create(recipe_id: @recipe.id, tag_id: tag.id)
       return redirect_to root_path
     else
       render "new"
@@ -61,7 +74,7 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipes_tag).permit(:title, :material, :text, :category_id, :time_require_id, :image, :name, :recipe_id).merge(user_id: current_user.id)
+    params.require(:recipe).permit(:title, :material, :text, :category_id, :time_require_id, :recipe_id, images: []).merge(user_id: current_user.id)
   end
 
   def move_to_index
