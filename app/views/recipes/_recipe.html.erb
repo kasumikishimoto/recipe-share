@@ -3,6 +3,7 @@
         
         <div class="recipe-image-content">
           <% recipe.images.find do |image| %>
+  <div class="research-list">
             <%= image_tag image, class:"recipe-images" %>
           <% end %>
         </div>
@@ -18,5 +19,6 @@
             <%= recipe.time_require.name %>
           </h3>
         </div>
+  </div>
       </div>
     <% end %>

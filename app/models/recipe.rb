@@ -5,7 +5,7 @@ class Recipe < ApplicationRecord
   belongs_to :time_require
   has_many_attached :images
   has_many :comments
-  has_many :recipe_tag_relations
+  has_many :recipe_tag_relations, dependent: :destroy
   has_many :tags, through: :recipe_tag_relations
 
 
@@ -17,8 +17,6 @@ class Recipe < ApplicationRecord
   def self.research(research)
     if research != ""
       Recipe.joins(:tags).where('tags.name LIKE ?',  "%#{research}%")
-      #Recipe.joins(:tags).where('tags.name': research)
-      #Recipe.joins(:recipe_tag_relations).where('text LIKE(?)', "%#{research}%")
     else
       Recipe.all
     end
