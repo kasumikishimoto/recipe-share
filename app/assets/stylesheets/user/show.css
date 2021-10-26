@@ -12,8 +12,3 @@
   overflow-x: scroll;
   flex-direction: row-reverse;
 }
-
-.comment__container {
-  margin-left: 50%;
-}
-

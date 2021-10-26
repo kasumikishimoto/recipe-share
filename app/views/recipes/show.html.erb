@@ -1,18 +1,12 @@
 <div class ="main">
-  <div class="show__wrapper">
-
-    <div class="hedding">
-      <div class="recipe_time_require">
-        <p class="recipe__time__rquire">所要時間 : 
+      <div class="hedding">
+        <p class="recipe__time__require">所要時間 : 
           <%= @recipe.time_require.name %>
         </p>
-      </div>
-      <div class="recipe_category">
         <p class="recipe__category">カテゴリー : 
           <%= @recipe.category.name %>
         </p>
       </div>
-    </div>
 
     <ul class="tag">
       <li class="tag-list">
@@ -31,45 +25,42 @@
         <%= link_to "Posted by#{@recipe.user.nickname}", user_path(@recipe.user_id), class: :recipe_user_btn %>
       </div>
     
-    <div class="separate__main">
-      <div class="recipe__image">
+      <div class="separate__main">
+        <div class="recipe__image">
         <%#= image_tag @recipe.image %><br/>
       
-      <% @recipe.images.each do |image| %>
-        <%= image_tag image, class:'images' %>
-      <% end %>
+        <% @recipe.images.each do |image| %>
+          <%= image_tag image, class:'images' %>
+        <% end %>
+        </div>
+
+
+
+        <div class="recipe__body">
+          <div class="recipe__materials">
+           <p class="recipe__material">材料</p>
+             <%= @recipe.material %>
+          </div>
+          <div class="description">
+            <p class="recipe__description">調理方法</p>
+            <%= @recipe.text %>
+          </div>
+        </div>
+
+        <% if user_signed_in? && current_user.id == @recipe.user.id %>
+          <div class="btn__display">
+            <%= link_to "編集", edit_recipe_path(@recipe.id), method: :get, class: :edit__btn %>
+            <%= link_to "削除", recipe_path(@recipe.id), method: :delete, class: :delete__btn %>
+          </div>
+        <% end %>
       </div>
-
-
-
-      <div class="recipe__body">
-        <div class="recipe__materials">
-          <p class="recipe__material">材料</p>
-          <%= @recipe.material %>
-        </div>
-        <div class="description">
-          <p class="recipe__description">調理方法</p>
-          <%= @recipe.text %>
-        </div>
-      </div>
-
-      <% if user_signed_in? && current_user.id == @recipe.user.id %>
-        <div class="btn__display">
-          <%= link_to "編集", edit_recipe_path(@recipe.id), method: :get, class: :edit__btn %>
-          <%= link_to "削除", recipe_path(@recipe.id), method: :delete, class: :delete__btn %>
-        </div>
-      <% end %>
     </div>
-    </div>
-  </div>
 
 
-  <%# コメント投稿機能 %>
     <div class="comment__container">
       <% if user_signed_in? %>
         <%= form_with(model: [@recipe, @comment], local: false) do |f| %>
-          <%= f.text_area :comment, placeholder: "コメントする", rows: "2" %>
-          <%#= f.submit '送信' %>
+          <%= f.text_area :comment, placeholder: "コメントする", rows: "2", class: "comment-form" %>
           <%= f.submit '送信', id: "comment_submit" %>
         <% end %>
       <% else %>
