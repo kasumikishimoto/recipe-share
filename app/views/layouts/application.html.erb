@@ -13,26 +13,32 @@
   <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header-bar">
         <div class="nav">
-          <div class="new_post_btn">
-            <%= link_to "投稿する", new_recipe_path, class: :post_btn %>
+          <div class="header-img">
+            <%#= link_to image_tag("title-logo.jpeg", class:"recipe-icon"), "/" %>
           </div>
+            <div class="new_post_btn">
+              <%= link_to "投稿する", new_recipe_path, class: :post_btn %>
+            </div>
 
           <%# ログイン中は以下を表示%>
-          <% if user_signed_in? %>
-          <div class="nav_right">
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav_btn %>
-          </div>
-          <% else %>
+        <div class="nav">
+          <ul class="lists-right">
+            <% if user_signed_in? %>
+              <div class="nav_right">
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav_btn %>
+              </div>
+            <% else %>
           <%# ログイン中は上記を表示%>
 
           <%# ログインしてない時は以下を表示 %>
-          <div class="nav_right">
-            <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
-            <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
-          </div>
-          <% end %>
+              <div class="nav_right">
+                <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
+                <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+              </div>
+            <% end %>
+          </ul>
+        </div>
           <%# ログインしてない時は以下を表示 %>
 
           <%# ハンバーガーメニューの表示 %>
@@ -40,20 +46,20 @@
             <li class="menu__single">
               <a href="#" class="init-bottom">食の豆知識</a>
                 <ul class="menu__second-level">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#">Child Menu</a></li>
+                  <li class="first"><a href="#">魚編</a></li>
+                  <li class="second"><a href="#">お肉編</a></li>
+                  <li class="third"><a href="#">野菜編</a></li>
+                  <li class="forth"><a href="#">スイーツ編</a></li>
                 </ul>
              </li>
           </ul>
           <%# ハンバーガーメニューの表示 %>
 
-       </div>
-      </div>
-    </header>
+        </div>
+     </header>
     <%= yield %>
+  </div>
   </body>
   <footer class="footer">
   </footer>
-  </div>
 </html>

@@ -1,3 +1,6 @@
+.main-container {
+  background-color: #f5efefd8;
+}
 
 body {
   height: 500px;
@@ -5,98 +8,175 @@ body {
 
 /* ヘッダー */
 
-.main-container {
-  background-color: #ffffff;
-
-}
-
-.main-container h1 {
-  margin: 60px 30px 30px 30px;
-  font-size: 60px;
-  font-family: 'Noto Serif JP', serif;
-  color: #966D5C;
-}
-
-.main-container h2 {
-  font-size: 20px;
-  margin: 30px;
-  font-family: 'Noto Sans SC - 400';
-  color: #966D5C;
-}
-
-.header-bar {
+.header {
   height: 65px;
-  color: #ffffff;
   font-size: 50px;
+  display: flex;
+  margin: 0 30px;
 }
 
-h1 {
-  color: black;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 80px;
+.header-img {
+  width: 120px;
 }
+
+/* ロゴアイコン
+.recipe-icon {
+  padding: 15px;
+}
+ */
 
 .nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
 .nav_right{
   display: inline-block;
   text-decoration: none;
   font-size: 20px;
-  background-color: #ffffff;
+  color: #364C63;
 }
 
-.new_post_btn {
+.post_btn {
   text-decoration: none;
-  margin: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid rgb(255, 255, 255);
 }
 
+a.post_btn {
+  color: #364C63;
+}
 
-/* トップページ */
+a.nav_btn {
+  color: #364C63;
+}
 
-.wrapper {
-  background-color: rgb(233, 216, 200);
+.nav {
+  position: relative;
+}
+
+/* メイン部分 */
+
+.top-page {
+  position: relative;
+}
+
+.main-logo {
+  text-align: center;
+  margin: 30px;
+}
+
+.main-image {
+  height: 40%;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.second-main-logo {
+  position: absolute;
+  top:40%;
+  right: 30%;
+}
+
+.main-container h1 {
+  margin: 60px 30px 15px 30px;
+  font-size: 75px;
+  font-family: 'Noto Serif JP', serif;
+  color: #ffffff;
+}
+
+.main-container h2 {
+  font-size: 20px;
+  font-family: 'Noto Sans SC - 400';
+  color:#364c63e3;
+  background-color: #ffffffd3;
+  padding: 15px 30px;
+  margin: 0 60px;
+}
+
+span {
+  font-size: 25px;
+}
+
+h1 {
+  color: #364C63;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 120px;
 }
 
 .sbox {
   height: 50px;
   width: 600px;
   max-width: 270px;
-  outline: none;
+  border: none;
 }
 
 .sbtn {
   width: 70px;
   height: 50px;
-  outline: none;
+  border: none;
  }
 
 .sbtn:hover {
-  background-color: rgb(255, 243, 241);
+  background-color: rgba(226, 180, 180, 0.829);
 }
+
+.search-tag-title {
+  font-size: 26px;
+  text-align: center;
+}
+
+.child-tag {
+  display: flex;
+  position: absolute;
+  left: 35%;
+}
+
+/* 検索フォーム */
+
+.popular-tags {
+  position: relative;
+}
+
+.search-bar-contents {
+  position: absolute;
+  top: 180%;
+  left: 35%;
+  margin: 30px;
+}
+
+.search-form {
+  top: 160%;
+  left: 40%;
+}
+
+.search-tag-title {
+  top: 270px;
+}
+
+.search-tag {
+  margin-top: 60px;
+}
+
 
 /* レシピ一覧表示 */
 
 .recipe__content {
   flex-direction: column;
+  position: relative;
 }
 
 .subtitle {
-  text-align: center;
   font-size: 3vh;
+  color: #203563b9;
   text-decoration: none;
   font-weight: bold;
-  color: #966D5C;
-   font-family: 'Noto Sans SC - 400';
-}
-
-.search-bar-contents {
-  text-align: center;
-  margin: 30px;
+  font-family: 'Noto Sans SC - 400';
+  position: absolute;
+  bottom: 110%;
+  left: 46%;
 }
 
 .recipe-contents {
@@ -104,7 +184,6 @@ h1 {
   flex-wrap: nowrap;
   margin: 300px 30px 30px 30px;
   overflow-x: scroll;
-
 }
 
 .list {
@@ -144,27 +223,15 @@ h3{
 
 /* 新規投稿ボタン */
 
-.new_post_btn {
-  font-size: 20px;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: #ffffff;
-  padding: 5px 5px;
-  margin: 10px 0 0 50px;
-}
-
-.post_btn {
-  text-decoration: none;
-}
-
 
 /* フッター  */
 
 .actions {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
-/* .footer {
-  background-color: #999;
+
+.footer {
   padding: 20px 0;
   position: fixed;
   bottom: 0;
@@ -177,4 +244,3 @@ p {
   color: #ffffff;
   font-size: 10px;
 }
-*/

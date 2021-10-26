@@ -1,14 +1,35 @@
 <div class="main-container">
-  <h1>コンカツ</h1>
-  <h2>献立活動、略して <span>コンカツ</span> 初めてみませんか？</h2>
 
-  <div class='search-bar-contents'>
-    <%= form_with(url: research_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
-      <%= form.text_field :keyword, placeholder: "ズボラ飯", class: "sbox" %>
-      <%= form.submit "検索", class: "sbtn" %>
-    <% end %>
+  <div class="top-page">
+    <div class="main-logo">
+      <%= image_tag("hotcake.jpeg", class:"main-image")%>
+    </div>
+
+    <div class="second-main-logo">
+      <h1>コンカツ</h1>
+      <h2><span>コンカツとは...</span>&emsp;献立活動のこと。<br/>
+      なにか作って食べたいけど、時間もないし、めんどくさい。そんな忙しい毎日を頑張るあなたへ<br/>
+      みんなのお家から、お手軽レシピを発信します</h2>
+    </div>
   </div>
 
+    <div class="popular-tags">
+      <div class='search-bar-contents'>
+        <%= form_with(url: research_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "ズボラ飯", class: "sbox" %>
+          <%= form.submit "検索", class: "sbtn" %>
+        <% end %>
+      </div>
+      <div class="search-tag">
+        <div class="search-tag-title">人気のタグ</div>
+        <div class="child-tag">
+          <h3>#ズボラ飯&emsp;</h3>
+          <h3>#栗ご飯&emsp;</h3>
+          <h3>#おでん&emsp;</h3>
+          <h3>#作り置きレシピ</h3>
+        </div>
+      </div>
+    </div>
 
 <div class="recipe__content">
   <div class="subtitle">

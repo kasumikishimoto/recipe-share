@@ -6,7 +6,7 @@ li.menu__single ul.menu__second-level {
   position: absolute;
   top: 40px;
   width: 100%;
-  background: #072A24;
+  background: #ffffffd3;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -17,13 +17,8 @@ li.menu__single:hover ul.menu__second-level {
   opacity: 1;
 }
 
-
-
-
 .menu {
-  position: relative;
   width: 60%;
-  height: 50px;
 }
 
 .menu > li {
@@ -34,15 +29,17 @@ li.menu__single:hover ul.menu__second-level {
   margin-top: 15px;
 }
 
+/* 食の豆知識 */
 .menu > li a {
   display: block;
-  color: #fff;
-  font-size: 30px;
+  color: #4e6c8dcb;
+  font-size: 20px;
   text-align: center;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 .menu > li a:hover {
-  color: #999;
+  color: #91c5fd;
 }
 
 ul.menu__second-level {
@@ -56,35 +53,25 @@ ul.menu__third-level {
   opacity: 0;
 }
 
-ul.menu__fourth-level {
-  visibility: hidden;
-  opacity: 0;
-}
-
 .menu > li:hover {
-  background: #072A24;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
 .menu__second-level li {
-  border-top: 1px solid #111;
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 .menu__third-level li {
-  border-top: 1px solid #111;
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 .menu__second-level li a:hover {
-  background: rgb(235, 229, 229);
+  background: rgba(255, 255, 255, 0.842);
 }
 
 .menu__third-level li a:hover {
-  background: #2a1f1f;
-}
-
-.menu__fourth-level li a:hover {
-  background: #1d0f0f;
+  background: #fff1f1;
 }
 
 /* 下矢印 */
@@ -94,8 +81,8 @@ ul.menu__fourth-level {
   width: 6px;
   height: 6px;
   margin: 0 0 0 15px;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-right: 1px solid #364c63;
+  border-bottom: 1px solid #364c63;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
