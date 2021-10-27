@@ -10,7 +10,6 @@
       <div id="image-list"></div>
 
     <% @recipe.images.each do |image| %>
-    <%# @recipe.images %>
       <%= image_tag image, class:'images' %>
     <% end %>
 
@@ -53,14 +52,14 @@
 <div class="field">
   <div class="field_material">
     <%= f.label :material, "材料" %><br />
-    <%= f.text_field :material, id:"cook_material", class:"material_field" %>
+    <%= f.text_area :material, id:"cook_material", class:"material_field" %>
   </div>
 </div>
 
 <div class="field">
   <div class="field_text">
     <%= f.label :text, "調理方法" %><br />
-    <%= f.text_field :text, id:"cook_text", class:"text_field" %>
+    <%= f.text_area :text, id:"cook_text", class:"text_field" %>
   </div>
 </div>
 

@@ -4,39 +4,53 @@
   background-color: #ffffffd0;
 }
 
-.cook_image {
-}
-
 .collection-select {
   border: 1px solid rgb(66, 66, 66);
+}
+
+#cook_image {
+  border: none;
 }
 
 .new-recipe {
   padding-top: 60px;
   margin: 30px;
+  color: #364c63;
+}
+
+.collection-select {
+  margin: 15px 0;
+  border: 1px solid rgb(155, 155, 155);
+  background-color: #ffffff;
 }
 
 .title_field {
   height: 40px;
   width: 270px;
-  outline: none;
+  border: 1px solid rgb(155, 155, 155);
+  background-color: #ffffff;
 }
 
 .input-tag {
-  outline: none;
+  height: 30px;
   width: 240px;
+  margin: 15px;
+  border: 1px solid rgb(155, 155, 155);
+  background-color: #ffffff;
 }
 
 .material_field {
   height: 90px;
   width: 270px;
-  outline: none;
+  border: 1px solid rgb(155, 155, 155);
+  background-color: #ffffff;
 }
 
 .text_field {
   height: 120px;
   width: 270px;
-  outline: none;
+  border: 1px solid rgb(155, 155, 155);
+  background-color: #ffffff;
 }
 
 .tag_field {

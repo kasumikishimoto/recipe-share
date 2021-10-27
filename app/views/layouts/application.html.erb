@@ -38,7 +38,9 @@
           <%# ログインしてない時は以下を表示 %>
 
           <div class="header-img">
-            <h1>コン<br/>カツ</h1>
+            <%= link_to root_path, class: :logo_image do %>
+              <h1>コン<br/>カツ</h1>
+            <% end %>
           </div>
 
           <%# ハンバーガーメニューの表示 %>
