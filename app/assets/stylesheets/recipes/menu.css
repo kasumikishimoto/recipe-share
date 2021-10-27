@@ -1,3 +1,7 @@
+.menu-list {
+  width: 60px;
+}
+
 .menu > li.menu__single {
   position: relative;
 }
@@ -18,7 +22,9 @@ li.menu__single:hover ul.menu__second-level {
 }
 
 .menu {
+  position: relative;
   width: 60%;
+  height: 50px;
 }
 
 .menu > li {

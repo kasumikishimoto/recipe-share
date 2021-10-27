@@ -1,12 +1,14 @@
 <div class="main">
-  <div class="inner">
+  <div class="user-inner">
     <div class="user__wrapper">
       <%= "#{@user.nickname}さんの投稿一覧" %>
     </div>
 
       <div class="user__recipes">
         <% @recipe.each do |recipe| %>
+          <%= link_to recipe_path(recipe.id) do %>
           <%= render partial:"recipes/recipe", locals: {recipe: recipe} %>
+          <% end %>
         <% end %>
       </div>
   </div>

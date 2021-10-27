@@ -1,12 +1,13 @@
 /* user関連 */
 
 .form-list {
+  background-color: #fff1f1b9;
   height: 100vh;
 }
 
 h2 {
   text-align: center;
-  margin-top: 40px;
+  padding: 30px;
   font-size: 30px;
 }
 
@@ -26,3 +27,31 @@ h2 {
   text-decoration: none;
 }
 
+input.user_nickname {
+  background-color: #ffffff;
+}
+
+/* ログイン */
+.session {
+  background-color: #fff1f1b9;
+}
+
+.login {
+  text-align: center;
+}
+
+input{
+  border:1px solid;
+  background-color: #ffffff;
+  }
+  
+.actions input {
+  border: none;
+  background-color: #ffffff00;
+  margin: 30px;
+}
+
+.login-area {
+  background-color: blue;
+  margin: 30px;
+}

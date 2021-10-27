@@ -1,10 +1,8 @@
-    <%= link_to recipe_path(recipe.id) do %>
-      <div class="recipes__list">
         
         <div class="recipe-image-content">
           <% recipe.images.find do |image| %>
-  <div class="research-list">
-            <%= image_tag image, class:"recipe-images" %>
+            <div class="research-list">
+              <%= image_tag image, class:"recipe-images" %>
           <% end %>
         </div>
 
@@ -18,7 +16,5 @@
           <h3 class="time_require">
             <%= recipe.time_require.name %>
           </h3>
+            </div>
         </div>
-  </div>
-      </div>
-    <% end %>

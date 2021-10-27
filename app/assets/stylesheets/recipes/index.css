@@ -16,12 +16,7 @@ body {
   margin: 0 30px;
 }
 
-.header-img {
-  width: 120px;
-}
-
 .nav {
-  width: 100%;
   display: flex;
 }
 
@@ -32,10 +27,11 @@ body {
   color: #364C63;
 }
 
-.post_btn {
-  text-decoration: none;
+a.post_btn {
   text-decoration: none;
   font-size: 20px;
+  margin: 15px;
+  padding: 5px;
   border: 2px solid rgb(255, 255, 255);
 }
 
@@ -45,6 +41,9 @@ a.post_btn {
 
 a.nav_btn {
   color: #364C63;
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .nav {
@@ -195,7 +194,7 @@ h1 {
 }
 
 .recipe-image-content {
-  margin: 20px;
+  margin: 30px;
 }
 
 .recipe-images {
@@ -205,11 +204,15 @@ h1 {
  }
 
 .recipe-title {
-  font-size: 2.5vh;
+  font-size: 18px;
 }
 
 h3{
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.recipe-category {
+  margin: 15px;
 }
 
 .recipe-info {
@@ -219,7 +222,7 @@ h3{
 
 .over-view {
   text-align: center;
-  margin: 30px 0 90px;
+  margin: 30px 30px 60px;
 }
 
 .time_require {
@@ -231,18 +234,16 @@ h3{
 
 /* フッター  */
 
-.footer {
+footer {
+  text-align: center;
   padding: 20px 0;
-  position: fixed;
   bottom: 0;
   width: 100%;
-  margin-top: auto;
-  background-color: rgba(199, 141, 141, 0.548);
+  background-color: rgba(214, 149, 149, 0.253);
 }
 
 .footer p{
   color: #290909a1;
-  text-align: center;
-  font-size: 15px;
+  font-size: 9px;
 }
 
