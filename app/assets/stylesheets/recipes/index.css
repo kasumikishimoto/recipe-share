@@ -92,8 +92,9 @@ a.nav_btn {
   font-family: 'Noto Sans SC - 400';
   color:#364c63e3;
   background-color: #ffffffd3;
-  padding: 15px 30px;
+  padding: 30px;
   margin: 0 60px;
+  line-height: 1.7;
 }
 
 span {
@@ -251,7 +252,7 @@ footer {
 }
 
 .footer p{
-  color: #290909a1;
+  color: #364C63;
   font-size: 9px;
 }
 
