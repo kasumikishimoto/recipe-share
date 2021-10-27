@@ -10,6 +10,7 @@
 
 #cook_image {
   border: none;
+  margin: 15px;
 }
 
 .new-recipe {
@@ -27,6 +28,7 @@
 .title_field {
   height: 40px;
   width: 270px;
+  margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
 }
@@ -42,6 +44,7 @@
 .material_field {
   height: 90px;
   width: 270px;
+  margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
 }
@@ -49,6 +52,7 @@
 .text_field {
   height: 120px;
   width: 270px;
+  margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
 }
