@@ -4,6 +4,12 @@
   background-color: #ffffffd0;
 }
 
+.cook_image {
+}
+
+.collection-select {
+  border: 1px solid rgb(66, 66, 66);
+}
 
 .new-recipe {
   padding-top: 60px;

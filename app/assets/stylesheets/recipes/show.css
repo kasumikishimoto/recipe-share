@@ -61,7 +61,7 @@
 }
 
 .recipe__body {
-  margin: 60px 0 60px 180px;
+  margin: 60px 0 60px 330px;
   padding: 30px;
 }
 
@@ -98,10 +98,12 @@ p.recipe__description {
 
 #comment_submit {
   background-color: rgb(255, 255, 255);
+  margin: 0 15px;
 }
 
 .comment___list {
   display: flex;
+  margin: 9px;
 }
 
 .comment__container {
@@ -125,6 +127,7 @@ p.recipe__description {
 }
 
 h4 {
+  text-align: center;
   color: #222020c4;
   padding: 9px;
 }

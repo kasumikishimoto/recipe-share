@@ -32,12 +32,10 @@ input.user_nickname {
 }
 
 /* ログイン */
-.session {
-  background-color: #fff1f1b9;
-}
 
 .login {
   text-align: center;
+  margin: 60px;
 }
 
 input{
@@ -46,12 +44,18 @@ input{
   }
   
 .actions input {
-  border: none;
   background-color: #ffffff00;
   margin: 30px;
+  padding: 6px;
 }
 
 .login-area {
   background-color: blue;
   margin: 30px;
+}
+
+.nav__btn {
+  padding: 5px;
+  border: 2px solid #ffffff;
+  margin: 18px;
 }
