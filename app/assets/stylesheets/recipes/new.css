@@ -1,23 +1,35 @@
 /* 新規投稿ページ */
 
+.inner {
+  background-color: #ffffffd0;
+}
+
+
 .new-recipe {
+  padding-top: 60px;
   margin: 30px;
 }
 
 .title_field {
-  height: 35px;
+  height: 40px;
+  width: 270px;
   outline: none;
+}
 
+.input-tag {
+  outline: none;
+  width: 240px;
 }
 
 .material_field {
-  height: 60px;
+  height: 90px;
+  width: 270px;
   outline: none;
 }
 
 .text_field {
-  height: 100px;
-  width: 80%;
+  height: 120px;
+  width: 270px;
   outline: none;
 }
 
@@ -27,3 +39,6 @@
   width: 80%;
 }
 
+.form__btn:hover {
+  color: rgba(146, 146, 146, 0.712);
+}
