@@ -1,5 +1,5 @@
 .menu-list {
-  width: 60px;
+  text-align: right;
 }
 
 .menu > li.menu__single {
@@ -23,29 +23,32 @@ li.menu__single:hover ul.menu__second-level {
 
 .menu {
   position: relative;
-  width: 60%;
+  width: 75%;
   height: 50px;
+  max-width: 1000px;
+  margin: 15px 120px;
 }
 
 .menu > li {
-  float: left;
-  width: 25%; /* グローバルナビ4つの場合 */
+  float: right;
+  width: 120%;
   height: 50px;
   line-height: 30px;
-  margin-top: 15px;
+  margin: 15px;
 }
 
 /* 食の豆知識 */
+
 .menu > li a {
   display: block;
-  color: #4e6c8dcb;
+  color: #364c63;
   font-size: 20px;
   text-align: center;
   font-family: 'M PLUS 1p', sans-serif;
 }
 
 .menu > li a:hover {
-  color: #91c5fd;
+  color: #91c5fdc2;
 }
 
 ul.menu__second-level {
@@ -65,19 +68,11 @@ ul.menu__third-level {
 }
 
 .menu__second-level li {
-  border-top: 1px solid rgb(255, 255, 255);
-}
-
-.menu__third-level li {
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgba(255, 255, 255, 0.575);
 }
 
 .menu__second-level li a:hover {
-  background: rgba(255, 255, 255, 0.842);
-}
-
-.menu__third-level li a:hover {
-  background: #fff1f1;
+  background: rgba(255, 255, 255, 0.658);
 }
 
 /* 下矢印 */
