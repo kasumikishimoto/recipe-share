@@ -66,3 +66,7 @@
 .form__btn:hover {
   color: rgba(146, 146, 146, 0.712);
 }
+
+strong {
+  color: #364c63;
+}

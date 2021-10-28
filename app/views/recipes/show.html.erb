@@ -27,7 +27,6 @@
     
       <div class="separate__main">
         <div class="recipe__image">
-        <%#= image_tag @recipe.image %><br/>
       
         <% @recipe.images.each do |image| %>
           <%= image_tag image, class:'images' %>
