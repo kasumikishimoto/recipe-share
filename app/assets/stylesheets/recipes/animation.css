@@ -1,0 +1,31 @@
+.main-container {
+  /*アニメーション設定*/
+  animation-name: fade-in3;
+  animation-duration: 2s; /*アニメーション時間*/
+  animation-timing-function: ease-out; /*アニメーションさせるイージング*/
+  animation-delay: 0.2s; /*アニメーション開始させる時間*/
+  animation-iteration-count: 1; /*繰り返し回数*/
+  animation-direction: normal; /*往復処理をするかどうか*/
+  animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
+}
+/* アニメーション */
+@keyframes fade-in3 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* 画像浮かせる */
+.recipe-images {
+  transition-duration: 0.4s;/*変化の時間*/
+  box-shadow: 0px 4px 15px -5px rgba(136, 136, 136, 0.75);
+}
+.recipe-images:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 18px -5px rgba(153, 153, 153, 0.75);
+}
