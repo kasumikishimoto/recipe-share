@@ -68,11 +68,11 @@ ul.menu__third-level {
 }
 
 .menu__second-level li {
-  border-top: 1px solid rgba(255, 255, 255, 0.575);
+  border-top: 1px solid rgba(255, 255, 255, 0.171);
 }
 
 .menu__second-level li a:hover {
-  background: rgba(255, 255, 255, 0.658);
+  background: rgba(255, 255, 255, 0.61);
 }
 
 /* 下矢印 */

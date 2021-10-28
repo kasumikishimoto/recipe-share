@@ -5,7 +5,7 @@
 <div class="field">
   <div class="field_image">
 
-    <%= f.label :images, "料理の画像" %><br />
+    <%= f.label :images, "料理の画像", class:'recipe_text' %><br />
     <%= f.file_field :images, name: 'recipe[images][]', id:"cook_image" %>
       <div id="image-list"></div>
 
@@ -20,14 +20,18 @@
 <div class="active-hash">
   <div class="field">
     <div class="field_time_require">
-    所要時間<br/>
+      <div class="recipe_text">
+        所要時間<br/>
+      </div>
       <%= f.collection_select(:time_require_id, TimeRequire.all, :id, :name, {}, {class:"collection-select"}) %>
     </div>
   </div>
 
   <div class="field">
     <div class="field_category">
-    カテゴリー<br/>
+      <div class="recipe_text">
+        カテゴリー<br/>
+      </div>
       <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"collection-select"}) %>
     </div>
   </div>
@@ -44,22 +48,22 @@
 
 <div class="field">
   <div class="field_title">
-    <%= f.label :title, "料理名" %><br />
+    <%= f.label :title, "料理名", class:"recipe-title" %><br />
     <%= f.text_field :title, id:"cook_title", class:"title_field" %>
   </div>
 </div>
 
 <div class="field">
   <div class="field_material">
-    <%= f.label :material, "材料" %><br />
+    <%= f.label :material, "材料", class:"recipe-materials" %><br />
     <%= f.text_area :material, id:"cook_material", class:"material_field" %>
   </div>
 </div>
 
 <div class="field">
   <div class="field_text">
-    <%= f.label :text, "調理方法" %><br />
-    <%= f.text_area :text, id:"cook_text", class:"text_field", value: "①""②" %>
+    <%= f.label :text, "調理方法", class:"way_to_cook" %><br />
+    <%= f.text_area :text, id:"cook_text", class:"text_field" %>
   </div>
 </div>
 

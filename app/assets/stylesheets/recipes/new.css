@@ -19,6 +19,10 @@
   color: #364c63;
 }
 
+.recipe_text {
+  color: #364c63;
+}
+
 .collection-select {
   margin: 15px 0;
   border: 1px solid rgb(155, 155, 155);
@@ -31,6 +35,7 @@
   margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
+  text-align: left;
 }
 
 .input-tag {
@@ -39,6 +44,23 @@
   margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
+  text-align: left;
+}
+
+.tag-name {
+  color: #364c63;
+}
+
+.recipe-title {
+  color: #364c63;
+}
+
+.recipe-materials {
+  color: #364c63;
+}
+
+.way_to_cook {
+  color: #364c63;
 }
 
 .material_field {
@@ -47,6 +69,7 @@
   margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
+  text-align: left;
 }
 
 .text_field {
@@ -55,12 +78,18 @@
   margin: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
+  text-align: left;
 }
 
 .tag_field {
   outline: none;
   height: 100px;
   width: 80%;
+}
+
+.form__btn {
+  color: #364c63;
+  border: 1px solid rgb(155, 155, 155);
 }
 
 .form__btn:hover {
