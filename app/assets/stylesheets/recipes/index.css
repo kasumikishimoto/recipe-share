@@ -15,8 +15,8 @@ body {
   border-bottom: solid 3px #364e96; /*下線*/
   font-family: 'Noto Serif JP', serif;
   font-weight: 800;
-  margin: 12px 60%;
   width: 75px;
+  margin-top: 15px;
 }
 
 .header {
@@ -67,6 +67,10 @@ a.nav_btn {
 .main-logo {
   text-align: center;
   margin: 30px;
+}
+
+.logo_image {
+  text-align: center;
 }
 
 .main-image {
@@ -207,7 +211,6 @@ h1 {
 }
 
 .recipe-images {
-  width: 30vw;
   height: 30vh;
   object-fit: cover;
  }

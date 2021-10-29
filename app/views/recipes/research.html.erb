@@ -9,7 +9,9 @@
 
   <div class="contents-row">
     <% @recipes.each do |recipe| %>
-      <%= render partial: "recipe", locals: { recipe: recipe } %>
+      <%= link_to recipe_path(recipe.id) do %>
+        <%= render partial: "recipe", locals: { recipe: recipe } %>
+      <% end %>
     <% end %>
   </div>
 </div>

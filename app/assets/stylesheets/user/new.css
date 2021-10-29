@@ -7,8 +7,9 @@
 
 h2 {
   text-align: center;
-  padding: 30px;
+  padding: 45px;
   font-size: 30px;
+  margin-top: 30px;
 }
 
 .field {
@@ -29,6 +30,7 @@ h2 {
 
 input.user_nickname {
   background-color: #ffffff;
+  height: 30px;
 }
 
 /* ログイン */

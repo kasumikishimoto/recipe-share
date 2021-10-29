@@ -71,13 +71,14 @@
   background-color: #ffffffb9;
   margin: 15px;
   padding: 0 15px 15px;
+  width: 120%;
 }
 
 .materials {
   color: #364c63;
   padding: 15px;
   line-height: 1.7;
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
 p.recipe__material {
@@ -87,12 +88,13 @@ p.recipe__material {
 
 .description {
   background-color: #ffffffb9;
-  margin: 15px;
+  margin: 60px 15px 15px;
   padding: 0 15px 15px;
+  width: 120%;
 }
 
 .description_area {
-  white-space: pre-wrap;
+  white-space: pre-line;
   color: #364c63;
   line-height: 1.7;
 }
