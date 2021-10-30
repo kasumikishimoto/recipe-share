@@ -203,7 +203,7 @@ h1 {
 }
 
 .recipes__list {
-  width: 200px;
+  width: 240px;
 }
 
 .recipe-image-content {
@@ -216,11 +216,11 @@ h1 {
  }
 
 .recipe-title {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 h3{
-  font-size: 15px;
+  font-size: 12px;
   color: #364C63;
 }
 
@@ -235,7 +235,7 @@ h3{
 
 .over-view {
   text-align: center;
-  margin: 30px 30px 60px;
+  margin: 30px 0 60px;
 }
 
 .time_require {
@@ -256,4 +256,3 @@ footer {
   color: #364C63;
   font-size: 9px;
 }
-

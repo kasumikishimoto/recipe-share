@@ -6,6 +6,7 @@
 
 .collection-select {
   border: 1px solid rgb(66, 66, 66);
+  border-radius:3px;
 }
 
 #cook_image {
@@ -27,24 +28,29 @@
   margin: 15px 0;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
+  border-radius:3px;
 }
 
 .title_field {
   height: 40px;
   width: 270px;
   margin: 15px;
+  padding: 9px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
   text-align: left;
+  border-radius:3px;
 }
 
 .input-tag {
   height: 30px;
   width: 240px;
   margin: 15px;
+  padding: 9px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
   text-align: left;
+  border-radius:3px;
 }
 
 .tag-name {
@@ -67,18 +73,22 @@
   height: 90px;
   width: 270px;
   margin: 15px;
+  padding: 9px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
   text-align: left;
+  border-radius:3px;
 }
 
 .text_field {
   height: 120px;
   width: 270px;
   margin: 15px;
+  padding: 9px;
   border: 1px solid rgb(155, 155, 155);
   background-color: #ffffff;
   text-align: left;
+  border-radius:3px;
 }
 
 .tag_field {
