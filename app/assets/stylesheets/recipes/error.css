@@ -2,4 +2,20 @@
 .error {
   text-align: center;
   font-size: 20px;
+  color: #364c63;
+}
+
+#error_explanation h2{
+  font-size: 21px;
+  color: #364c63;
+}
+
+#error_explanation li{
+  color: #364c63;
+}
+
+.login-flash-message {
+  text-align: center;
+  font-size: 21px;
+  color: #364c63;
 }
