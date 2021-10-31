@@ -71,7 +71,6 @@
   background-color: #ffffffb9;
   margin: 15px;
   padding: 0 15px 15px;
-  width: 120%;
 }
 
 .materials {
@@ -90,7 +89,6 @@ p.recipe__material {
   background-color: #ffffffb9;
   margin: 60px 15px 15px;
   padding: 0 15px 15px;
-  width: 120%;
 }
 
 .description_area {
