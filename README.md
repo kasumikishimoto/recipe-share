@@ -41,13 +41,13 @@ recipe-share
 [![Image from Gyazo](https://i.gyazo.com/919ad06332abcdab82a7527b2e76bb56.gif)](https://gyazo.com/919ad06332abcdab82a7527b2e76bb56)
 
 - 投稿機能
-[![Image from Gyazo](https://i.gyazo.com/5756e4676589b318ac4a27a4d9b8bf39.gif)](https://gyazo.com/5756e4676589b318ac4a27a4d9b8bf39)
+[![Image from Gyazo](https://i.gyazo.com/ebff596db3b7dfc16d64130631ea85c0.gif)](https://gyazo.com/ebff596db3b7dfc16d64130631ea85c0)
 
 - 検索機能
 [![Image from Gyazo](https://i.gyazo.com/eb98e0c3fc0def29062bad21360906d1.gif)](https://gyazo.com/eb98e0c3fc0def29062bad21360906d1)
 
 - コメント機能 / 即時更新機能
-[![Image from Gyazo](https://i.gyazo.com/a89142806508a9c2408a88298087385d.gif)](https://gyazo.com/a89142806508a9c2408a88298087385d)
+[![Image from Gyazo](https://i.gyazo.com/ab5a47244feca61083829a14f87fdd64.gif)](https://gyazo.com/ab5a47244feca61083829a14f87fdd64)
 
 - 投稿画像の複数選択機能 / 選択した画像のプレビュー機能
 [![Image from Gyazo](https://i.gyazo.com/e9fc9bd82c790e0a9a0a6e2817798c4c.gif)](https://gyazo.com/e9fc9bd82c790e0a9a0a6e2817798c4c)
