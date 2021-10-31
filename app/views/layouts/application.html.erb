@@ -17,16 +17,13 @@
             <%= link_to "投稿する", new_recipe_path, class: :post_btn %>
           </div>
 
-          <%# ログイン中は以下を表示%>
           <ul class="lists-right">
             <% if user_signed_in? %>
               <div class="nav_right">
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav_btn %>
               </div>
             <% else %>
-          <%# ログイン中は上記を表示%>
 
-          <%# ログインしてない時は以下を表示 %>
               <div class="nav_right">
                 <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
                 <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
@@ -34,7 +31,6 @@
             <% end %>
           </ul>
         </div>
-          <%# ログインしてない時は以下を表示 %>
 
           <div class="header-img">
             <%= link_to root_path, class: :logo_image do %>
@@ -43,7 +39,7 @@
           </div>
 
           <%# ハンバーガーメニューの表示 %>
-        <div class="menu-list">
+        <%#<div class="menu-list">
           <ul class="menu">
             <li class="menu__single">
               <a href="#" class="init-bottom">食の豆知識</a>
@@ -55,7 +51,7 @@
                 </ul>
             </li>
           </ul>
-        </div>
+        </div>%>
           <%# ハンバーガーメニューの表示 %>
 
         </div>

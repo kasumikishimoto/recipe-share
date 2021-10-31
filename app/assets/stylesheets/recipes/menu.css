@@ -1,4 +1,4 @@
-.menu-list {
+/*.menu-list {
   text-align: right;
 }
 
@@ -36,9 +36,9 @@ li.menu__single:hover ul.menu__second-level {
   line-height: 30px;
   margin: 15px;
 }
-
+*/
 /* 食の豆知識 */
-
+/*
 .menu > li a {
   display: block;
   color: #364c63;
@@ -74,9 +74,10 @@ ul.menu__third-level {
 .menu__second-level li a:hover {
   background: rgba(255, 255, 255, 0.61);
 }
+*/
 
 /* 下矢印 */
-.init-bottom:after {
+/*.init-bottom:after {
   content: '';
   display: inline-block;
   width: 6px;
@@ -88,8 +89,10 @@ ul.menu__third-level {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+*/
 
 /* floatクリア */
+/*
 .menu:before,
 .menu:after {
   content: " ";
@@ -103,3 +106,4 @@ ul.menu__third-level {
 .menu {
   *zoom: 1;
 }
+*/

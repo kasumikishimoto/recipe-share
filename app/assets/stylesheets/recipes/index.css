@@ -7,16 +7,26 @@ body {
 }
 
 /* ヘッダー */
+.header-img {
+  margin: 0 auto;
+  padding-right: 21%;
+}
+
 .header-img h1{
   font-size: 27px;
-  color: #364e96; /*文字色*/
-  padding: 0.3em 0; /*上下の余白*/
-  border-top: solid 3px #364e96; /*上線*/
-  border-bottom: solid 3px #364e96; /*下線*/
+  color: #364e96;
+  padding: 0.3em 0;
+  border-top: solid 3px #364e96;
+  border-bottom: solid 3px #364e96;
   font-family: 'Noto Serif JP', serif;
   font-weight: 800;
   width: 75px;
-  margin-top: 15px;
+  margin: 9px;
+  text-align: center;
+}
+
+.logo_image {
+  margin: 0 auto;
 }
 
 .header {
@@ -25,6 +35,7 @@ body {
   display: flex;
   margin: 0 30px;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav {
@@ -69,10 +80,6 @@ a.nav_btn {
   margin: 30px;
 }
 
-.logo_image {
-  text-align: center;
-}
-
 .main-image {
   height: 40%;
   width: 70%;
@@ -83,6 +90,10 @@ a.nav_btn {
   position: absolute;
   top:55%;
   right: 30%;
+}
+
+.second-main-logo h1 {
+  margin-left: 30%;
 }
 
 .main-container h1 {
@@ -105,16 +116,10 @@ span {
   font-size: 25px;
 }
 
-h1 {
-  color: #364C63;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 120px;
-}
-
 .sbox {
   height: 50px;
   width: 600px;
+  margin: 30px 15px 30px;
   max-width: 270px;
   border: none;
   background-color: #ffffff;
@@ -155,14 +160,12 @@ h1 {
   position: absolute;
   top: 120%;
   left: 35%;
-  margin: 30px;
-  padding-top: 45px;
 }
 
 .search-form {
   top: 120%;
   left: 40%;
-  margin-bottom: 60px;
+  margin: 45px;
 }
 
 .search-tag {
