@@ -8,6 +8,11 @@
   </div>
 
   <div class="contents-row">
+  
+  <% if @recipes.length == 0 %>
+    <div class="nil_message">ヒットする投稿は0件です</div>
+  <% end %>
+
     <% @recipes.each do |recipe| %>
       <%= link_to recipe_path(recipe.id) do %>
         <%= render partial: "recipe", locals: { recipe: recipe } %>
