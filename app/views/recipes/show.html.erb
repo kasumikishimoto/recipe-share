@@ -37,6 +37,14 @@
           <% end %>
         </div>
 
+      <%# いいね機能 %>
+        <% if current_user.liked_by?(recipe.id) %>
+          <div>いいねを外す</div>
+        <% else %>
+          <div>いいね</div>
+        <% end %>
+      <%# いいね機能 %>
+
         <div class="recipe__body">
           <div class="recipe__materials">
            <p class="recipe__material">材料</p>
