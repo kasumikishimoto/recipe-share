@@ -11,4 +11,6 @@ Rails.application.routes.draw do
       end
   end
   resources :users, only: :show
-  end
+  
+  post 'like/:id' => 'likes#create', as: 'create_like'
+end
