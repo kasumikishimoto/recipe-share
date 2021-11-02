@@ -8,4 +8,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   validates :nickname, presence: true
+
+  # テーブルとのやりとりに関するメソッドはモデルに置く
+  def liked_by?(recipe_id)
+    likes.where(recipe_id: recipe_id).exists?
+  end
 end
