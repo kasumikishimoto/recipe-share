@@ -96,6 +96,10 @@ a.nav_btn {
   margin-left: 30%;
 }
 
+.second-main-logo h2 {
+  text-align: center;
+}
+
 .main-container h1 {
   font-size: 75px;
   font-family: 'Noto Serif JP', serif;
