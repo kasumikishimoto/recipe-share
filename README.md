@@ -99,6 +99,7 @@
 
 - has_many :recipes
 - has_many :comments
+- has_many :likes
 
 
 ## recipesテーブル
@@ -119,6 +120,7 @@
 - has_many :comments
 - has_many :recipe_tag_relations
 - has_many :tags, through: :recipe_tag_relations
+- has_many :likes
 
 
 ## commentsテーブル
@@ -169,7 +171,7 @@
 
 ## Association
 
-- belongs_to :recipe
 - belongs_to :user
+- belongs_to :recipe
 
 
