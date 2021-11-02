@@ -7,6 +7,7 @@ class Recipe < ApplicationRecord
   has_many :comments
   has_many :recipe_tag_relations, dependent: :destroy
   has_many :tags, through: :recipe_tag_relations
+  has_many :likes
 
 
   with_options presence: true do
