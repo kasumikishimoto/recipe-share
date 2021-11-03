@@ -19,6 +19,14 @@
       <p class="show__hedding">
         <%= @recipe.title %>
       </p>
+
+        <%# いいね機能 %>
+        <div class="likes">
+          <%= render partial:"like" %>
+        </div>
+        <%# いいね機能 %>
+
+
       <div class="recipe__user">
         <%= link_to "Posted by  #{@recipe.user.nickname}", user_path(@recipe.user_id), class: :recipe_user_btn %>
       </div>
@@ -36,14 +44,6 @@
             <%= image_tag image, class:'images' %>
           <% end %>
         </div>
-
-      <%# いいね機能 %>
-        <% if current_user.liked_by?(recipe.id) %>
-          <div>いいねを外す</div>
-        <% else %>
-          <div>いいね</div>
-        <% end %>
-      <%# いいね機能 %>
 
         <div class="recipe__body">
           <div class="recipe__materials">
