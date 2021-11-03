@@ -8,6 +8,5 @@ class LikesController < ApplicationController
   def destroy
     Like.find_by(user_id: current_user.id, recipe_id: params[:id]).destroy
     redirect_to recipe_path
-    
   end
 end

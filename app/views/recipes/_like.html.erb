@@ -1,11 +1,11 @@
-          <% if current_user.liked_by?(@recipe.id) %>
-            <div class="favo">
-              <%= link_to 'いいねを外す', destroy_like_path(@recipe), method: :DELETE, class: :like_d %>
-              <%= @recipe.likes.count %>
-            </div>
-          <% else %>
-            <div class="l_favorite">
-              <%= link_to 'いいね', create_like_path(@recipe), method: :POST, class: :like %>
-              <%= @recipe.likes.count %>
-            </div>
-          <% end %>
+<% if current_user.liked_by?(@recipe.id) %>
+  <div class="favo">
+    <%= link_to 'いいねを外す', destroy_like_path(@recipe), method: :DELETE, remote: true, class: :like_d %>
+    <%= @recipe.likes.count %>
+  </div>
+<% else %>
+  <div class="l_favorite">
+    <%= link_to 'いいね', create_like_path(@recipe), method: :POST, remote: true, class: :like %>
+    <%= @recipe.likes.count %>
+  </div>
+<% end %>
