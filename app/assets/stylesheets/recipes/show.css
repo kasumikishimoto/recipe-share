@@ -176,3 +176,27 @@ h4 {
   background-color: #ffffff;
   padding: 9px;
 }
+
+/* いいね機能 */
+
+.favo {
+}
+
+.likes {
+}
+
+.like {
+}
+
+.like:hover {
+  color: #ffffff;
+  background-color: aqua;
+} 
+
+.like_d {
+}
+
+.like_d:hover {
+  color: aqua;
+  background-color: #ffffff;
+}

@@ -21,9 +21,11 @@
       </p>
 
         <%# いいね機能 %>
-        <div class="likes">
+      <div class="likes">
+        <div id="recipe_<%= @recipe.id %>">
           <%= render partial:"like" %>
         </div>
+      </div>
         <%# いいね機能 %>
 
 
