@@ -1,5 +1,5 @@
 class LikesController < ApplicationController
-  before_action :recipe_params
+  before_action :recipes_params
 
   def create
     Like.create(user_id: current_user.id, recipe_id: params[:id])
@@ -10,7 +10,7 @@ class LikesController < ApplicationController
   end
 
   private
-  def recipe_params
+  def recipes_params
     @recipe = Recipe.find(params[:id])
   end
 end
