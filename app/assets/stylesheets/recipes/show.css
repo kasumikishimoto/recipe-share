@@ -179,24 +179,20 @@ h4 {
 
 /* いいね機能 */
 
-.favo {
+.like-link {
+  text-decoration: none;
 }
 
-.likes {
+.like-link:hover {
+  background-color: #fff!important;
 }
 
-.like {
+.like-btn {
+  font-size: 15px;
+  color: #808080;
 }
 
-.like:hover {
-  color: #ffffff;
-  background-color: aqua;
-} 
-
-.like_d {
-}
-
-.like_d:hover {
-  color: aqua;
-  background-color: #ffffff;
+.unlike-btn {
+  font-size: 15px;
+  color: #e54747;
 }
