@@ -215,10 +215,34 @@ span {
 
 .recipe-image-content {
   margin: 30px;
+  position: relative;
+}
+
+.top-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  color: #e54747;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 56%;
+  left: 80%;
+}
+
+.like__btn {
+  padding: 1.5px;
 }
 
 .recipe-images {
   height: 30vh;
+  width: 30vw;
   object-fit: cover;
  }
 

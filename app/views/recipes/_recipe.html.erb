@@ -4,12 +4,21 @@
             <div class="research-list">
               <%= image_tag image, class:"recipe-images" %>
           <% end %>
+            <div class="top-icon">
+              <i class="fa fa-heart like__btn"></i>
+                <div class="count">
+                  <%= recipe.likes.count %>
+                </div>
+            </div>
         </div>
 
         <div class="over-view">
-          <h3 class="recipe-title">
-            <%= recipe.title %>
-          </h3>
+          <div class="recipe-title">
+            <h3 class="recipe-title">
+              <%= recipe.title %>
+            </h3>
+          </div>
+
           <h3 class="recipe-category">
             <%= recipe.category.name %>
           </h3>
