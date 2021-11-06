@@ -1,1 +1,1 @@
-document.getElementById('recipe_<%= @recipe.id %>').innerHTML = '<%= j(render @recipe) %>'
+document.getElementById('recipe_<%= @recipe.id %>').innerHTML = '<%= j(render partial: "recipes/like") %>'
