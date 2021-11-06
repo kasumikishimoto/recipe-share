@@ -1,7 +1,15 @@
 /* user関連 */
 
-.form-list {
+.registration {
   background-color: #fff1f1b9;
+  padding: 24px 0;
+}
+
+.form-list {
+  width: 45%;
+  margin: 0 27%;
+  background-color: #e2bbbb2d;
+  border-radius: 7px;
 }
 
 .form-list h2 {
@@ -36,6 +44,35 @@
 input.user_nickname {
   background-color: #ffffff;
   height: 30px;
+  margin: 0 auto;
+}
+
+input#user_nickname {
+  height: 60px;
+  width: 330px;
+  border-radius: 5px;
+  border: none;
+}
+
+input#user_email {
+  height: 60px;
+  width: 330px;
+  border-radius: 5px;
+  border: none;
+}
+
+input#user_password {
+  height: 60px;
+  width: 330px;
+  border-radius: 5px;
+  border: none;
+}
+
+input#user_password_confirmation {
+  height: 60px;
+  width: 330px;
+  border-radius: 5px;
+  border: none;
 }
 
 /* ログイン */
