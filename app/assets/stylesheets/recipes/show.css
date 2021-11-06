@@ -179,12 +179,12 @@ h4 {
 
 /* いいね機能 */
 
-.like-link {
-  text-decoration: none;
+.likes {
+  padding-left: 63%;
 }
 
-.like-link:hover {
-  background-color: #fff!important;
+.like-link {
+  text-decoration: none;
 }
 
 .like-btn {
@@ -196,3 +196,4 @@ h4 {
   font-size: 15px;
   color: #e54747;
 }
+
