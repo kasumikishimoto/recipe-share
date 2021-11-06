@@ -75,7 +75,7 @@
 
  - いいね機能&emsp;(11/6中に実装完成予定)
  - SNS認証の導入&emsp;(11/7中に実装完成予定)
- - 複数タグ付け機能&emsp;(11/7重に実装完成予定)
+ - 複数タグ付け機能&emsp;(11/7中に実装完成予定)
  - 通知機能&emsp;(11/8中に実装完成予定)
  - レシピのランダム提案機能
 
@@ -174,4 +174,12 @@
 - belongs_to :user
 - belongs_to :recipe
 
+
+## sns_credentialsテーブル
+
+| Column               | Type       | Options                        |
+| -------------------- | ---------- | ------------------------------ |
+| provider             | string     |                                |
+| uid                  | string     |                                |
+| user                 | references | foreign_key: true              |
 
