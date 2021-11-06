@@ -5,10 +5,10 @@ class User < ApplicationRecord
   has_many :comments
   has_many :likes
   has_many :sns_credentials
-  
+
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
-         :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:google_oauth2]
+         :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
+
   
   validates :nickname, presence: true
 
