@@ -100,6 +100,7 @@
 - has_many :recipes
 - has_many :comments
 - has_many :likes
+- has_many :sns_credentials
 
 
 ## recipesテーブル
@@ -183,3 +184,6 @@
 | uid                  | string     |                                |
 | user                 | references | foreign_key: true              |
 
+## Asocciation
+
+- belongs_to :user
