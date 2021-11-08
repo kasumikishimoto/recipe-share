@@ -96,12 +96,14 @@ input#user_password_confirmation {
 
 .login {
   text-align: center;
+  line-height: 30px;
   padding: 30px 30px 45px;
   background-color: #fff1f1b9;
 }
 
 input{
   border:1px solid;
+  border-radius: 3px;
   background-color: #ffffff;
   }
   
@@ -112,7 +114,8 @@ input{
 }
 
 .nav__btn {
-  padding: 5px;
-  border: 2px solid #ffffff;
+  padding: 9px;
   margin: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
 }
