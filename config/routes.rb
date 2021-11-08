@@ -13,7 +13,7 @@ Rails.application.routes.draw do
         get 'research'
       end
   end
-  resources :users, only: :show
+  resources :users, only: [:show, :new]
 
   post 'like/:id' => 'likes#create', as: 'create_like'
   delete 'like/:id' => 'likes#destroy', as: 'destroy_like'
