@@ -1,3 +1,14 @@
-<%= link_to "メールアドレスで登録", new_user_registration_path%>
-
-<%= link_to "Googleで登録", user_google_oauth2_omniauth_authorize_path, method: :post%>
+<div class="form-wrapper">
+  <h1>Selection of registration method</h1>
+  <form>
+    <div class="registration_m">
+      <%= link_to "メールアドレスで登録", new_user_registration_path, class: :registration__m %>
+    </div>
+    <div class="registration_g">
+      <%= link_to 'Googleで登録', user_google_oauth2_omniauth_authorize_path, method: :post, class: :registration__g %>
+    </div>
+    <div class="registration_f">
+      <%= link_to 'Facebookで登録', user_facebook_omniauth_authorize_path, method: :post, class: :registration__f %>
+    </div>
+  </form>
+</div>
