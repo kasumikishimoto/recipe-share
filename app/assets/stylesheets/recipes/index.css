@@ -4,6 +4,10 @@
 
 body {
   background-color: #f5efefd8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* ヘッダー */
@@ -85,6 +89,7 @@ a.nav_btn {
   height: 40%;
   width: 70%;
   margin-top: 30px;
+  box-shadow: 6px 6px 12px rgba(182, 182, 182, 0.767);
 }
 
 .second-main-logo {
@@ -288,11 +293,10 @@ footer {
   text-align: center;
   padding: 20px 0;
   bottom: 0;
-  width: 100%;
   background-color: rgba(214, 149, 149, 0.253);
 }
 
-.footer p{
+footer p{
   color: #364C63;
   font-size: 9px;
 }
