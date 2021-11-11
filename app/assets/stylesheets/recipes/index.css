@@ -66,8 +66,9 @@ a.post_btn {
 a.nav_btn {
   color: #364C63;
   margin: 18px;
-  padding: 5px;
+  padding: 9px;
   border: 2px solid rgb(255, 255, 255);
+  border-radius: 6px;
 }
 
 .nav {
