@@ -63,6 +63,12 @@
 - 投稿画像の複数選択機能 / 選択した画像のプレビュー機能
 [![Image from Gyazo](https://i.gyazo.com/e9fc9bd82c790e0a9a0a6e2817798c4c.gif)](https://gyazo.com/e9fc9bd82c790e0a9a0a6e2817798c4c)
 
+- いいね機能
+[![Image from Gyazo](https://i.gyazo.com/b57f9f1caefe32d425f3aeaedc6d3555.gif)](https://gyazo.com/b57f9f1caefe32d425f3aeaedc6d3555)
+
+- SNS認証
+[![Image from Gyazo](https://i.gyazo.com/c119b1cd09afea7c0fe2c5344b73f08f.gif)](https://gyazo.com/c119b1cd09afea7c0fe2c5344b73f08f)
+
 
  ## 実装予定の機能
  - ユーザー管理機能
@@ -74,8 +80,8 @@
  - 投稿時に複数の写真の選択機能
  - いいね機能
  - SNS認証の導入&emsp;
- - 複数タグ付け機能&emsp;(11/10中に実装完成予定)
- - 通知機能&emsp;(11/13中に実装完成予定)
+ - 複数タグ付け機能&emsp;(11/13中に実装完成予定)
+ - 通知機能&emsp;(11/15中に実装完成予定)
  - レシピのランダム提案機能
 
  ## データベース設計
