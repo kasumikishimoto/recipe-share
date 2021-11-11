@@ -33,8 +33,16 @@
   border-bottom: solid 2px #cfcfcf6c;
 }
 
+.registration_m a:hover {
+  color: #364c6377;
+}
+
 .registration_g {
   margin: 78px;
+}
+
+.registration_g a:hover {
+  color: #364c6377;
 }
 
 .registration_g a {
@@ -55,6 +63,10 @@
   border-bottom: solid 2px #cfcfcf6c;
 }
 
+.registration_f a:hover {
+  color: #364c6377;
+}
+
 /* user関連 */
 
 .registration {
@@ -64,8 +76,14 @@
 .registration h2 {
   text-align: center;
   padding: 45px;
+  margin-top: 30px;
   font-size: 30px;
-  margin-top: 30px;  
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
 }
 
 .form-list {
@@ -94,6 +112,21 @@
  .fieldd {
    margin: 15px;
    text-align: center;
+ }
+
+ .new_r {
+   margin: 15px;
+   padding: 9px;
+   text-align: left;
+ }
+
+ em {
+   color: #364c63;
+   font-family: 'M PLUS 1p', sans-serif;
+   font-family: 'Noto Serif JP', serif;
+   font-family: 'Rampart One';
+   font-family: 'Zen Maru Gothic', sans-serif;
+   font-family: 'Zen Old Mincho', serif;
  }
 
 .actions {
@@ -147,8 +180,28 @@ input#user_password_confirmation {
 .session h2 {
   text-align: center;
   padding: 45px;
-  font-size: 30px;
   margin-top: 30px;
+  font-size: 30px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
+}
+
+.email_field {
+  text-align: left;
+  margin: 15px;
+  padding: 9px;
+  background-color: #ffffff;
+}
+
+.password_field {
+  text-align: left;
+  margin: 15px;
+  padding: 9px;
+  background-color: #ffffff;
 }
 
 .login {
@@ -156,19 +209,53 @@ input#user_password_confirmation {
   line-height: 30px;
   padding: 30px 30px 45px;
   background-color: #fff1f1b9;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
 }
 
-input{
-  border:1px solid;
-  border-radius: 3px;
+.fieldd {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
+}
+
+.actions {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
+}
+
+input {
   background-color: #ffffff;
-  }
-  
+}
+
 .actions input {
-  background-color: #ffffff00;
   margin: 30px;
   padding: 6px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ffffff;
+  color: #5f83aa;
+  border-bottom: solid 4px #eeeeee;
+  border-radius: 3px;
 }
+
+.actions input:active {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  border-bottom: none;
+  }
 
 .nav__btn {
   padding: 9px;

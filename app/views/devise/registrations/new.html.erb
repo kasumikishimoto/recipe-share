@@ -7,26 +7,22 @@
   </div>
   
   <div class="field">
-    <%= f.label :nickname, "Nickname" %><br />
-    <%= f.text_field :nickname, id:"user_nickname" %>
+    <%= f.text_field :nickname, id:"user_nickname", placeholder: "Nickname", class: "new_r" %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "new_r" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em><%= @minimum_password_length %> characters minimum</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Passeord", class: "new_r" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation", class: "new_r" %>
   </div>
 
   <div class="actions">
