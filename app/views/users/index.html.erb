@@ -1,0 +1,14 @@
+<div class="form-wrapper">
+  <h1>Selection of Login method</h1>
+  <form>
+    <div class="registration_m">
+      <%= link_to "メールアドレスでログイン", new_user_session_path, class: :registration__m %>
+    </div>
+    <div class="registration_g">
+      <%= link_to "Googleでログイン", user_google_oauth2_omniauth_authorize_path, method: :post, class: :registration__g %>
+    </div>
+    <div class="registration_f">
+      <%= link_to "Facebookでログイン", user_facebook_omniauth_authorize_path, method: :post, class: :registration__f %>
+    </div>
+  </form>
+</div>
