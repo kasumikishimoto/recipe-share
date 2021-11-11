@@ -3,7 +3,7 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def facebook
-    authentication
+    authorization
   end
 
   def google_oauth2

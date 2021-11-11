@@ -14,16 +14,22 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "new_r" %>
   </div>
 
+
+ <%if @sns_id.present? %>
+   <%= hidden_field_tag :sns_auth, true %>
+ <% else %>
   <div class="field">
     <% if @minimum_password_length %>
     <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %><br />
+    <% end %>
+    <br />
     <%= f.password_field :password, autocomplete: "new-password", placeholder: "Passeord", class: "new_r" %>
   </div>
 
   <div class="field">
     <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation", class: "new_r" %>
   </div>
+<% end %>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
