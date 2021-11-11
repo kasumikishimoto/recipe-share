@@ -3,10 +3,16 @@
 }
 
 .user__wrapper {
-  text-align: center;
-  font-size: 30px;
   margin: 30px;
   padding-top: 75px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
 }
 
 .user__recipes {

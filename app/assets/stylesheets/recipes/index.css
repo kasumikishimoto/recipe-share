@@ -135,6 +135,7 @@ span {
   max-width: 270px;
   border: none;
   border-radius: 3px;
+  text-align: left;
   background-color: #ffffff;
 }
 
@@ -202,14 +203,18 @@ span {
 }
 
 .subtitle {
-  font-size: 20px;
-  color: #203563b9;
   text-decoration: none;
-  font-weight: bold;
-  font-family: 'Noto Sans SC - 400';
   position: absolute;
   bottom: 110%;
   left: 46%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Rampart One';
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  color: #364c63;
 }
 
 .recipe-contents {
@@ -238,12 +243,11 @@ span {
   border-radius: 50%;
   border: 1px solid #dddddd;
   cursor: pointer;
-  color: #e54747;
-  background-color: #ffffff;
-
-  position: absolute;
   top: 56%;
   left: 80%;
+  position: absolute;
+  color: #e54747;
+  background-color: #ffffff;
 }
 
 .like__btn {
@@ -254,6 +258,7 @@ span {
   height: 30vh;
   width: 30vw;
   object-fit: cover;
+  position: relative;
  }
 
 h3.recipe-title {
