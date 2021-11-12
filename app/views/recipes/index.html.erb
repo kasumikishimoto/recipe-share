@@ -14,15 +14,6 @@
   </div>
 
     <div class="popular-tags">
-      <%#<div class="search-tag">
-        <div class="search-tag-title">人気のタグ</div>
-        <div class="child-tag">
-          <h3>#ズボラ飯&emsp;</h3>
-          <h3>#栗ご飯&emsp;</h3>
-          <h3>#おでん&emsp;</h3>
-          <h3>#作り置きレシピ</h3>
-        </div>
-      </div>%>
       <div class='search-bar-contents'>
         <%= form_with(url: research_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
           <%= form.text_field :keyword, placeholder: "ズボラ飯", class: "sbox" %>
