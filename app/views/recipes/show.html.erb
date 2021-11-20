@@ -12,7 +12,7 @@
       <ul class="tag">
         <li class="tag-list">
           <% @recipe.tags.each do |tag| %>
-            <%= tag.name %>
+            <%= "#{tag.name}" %>
           <%end%>
         </li>
       </ul>
@@ -20,13 +20,11 @@
         <%= @recipe.title %>
       </p>
 
-      <%# いいね機能 %>
       <div class="likes">
         <div id="recipe_<%= @recipe.id %>">
           <%= render partial:"like" %>
         </div>
       </div>
-      <%# いいね機能 %>
 
       <div class="recipe__user">
         <%= link_to "Posted by  #{@recipe.user.nickname}", user_path(@recipe.user_id), class: :recipe_user_btn %>

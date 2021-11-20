@@ -39,8 +39,8 @@
 
 <div class="field">
   <div class="tag-field", id='tag-field'>
-    <%= f.label :name, "タグ", class:"tag-name" %><br />
-    <%= f.text_field :name,  placeholder: "#時短レシピ(複数入力可)", class:"input-tag" %>
+    <%= f.label :name, "タグ""(複数入力の際はカンマで区切って入力ください)", class:"tag-name" %><br />
+    <%= f.text_field :name,  placeholder: "#時短レシピ, #サラダ", class:"input-tag" %>
   </div>
     <div id="search-result">
     </div>
