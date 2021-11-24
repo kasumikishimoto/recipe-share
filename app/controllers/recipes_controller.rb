@@ -12,11 +12,10 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
     params[:recipe][:name].split(',')
-    tags = params[:recipe][:name].split(" ") # => ["#test", "#coffee"]
+    tags = params[:recipe][:name].split(" ")
     tags = tags.map do |tag|
     # tag.where(name: tag).first_or_initialize
     end
-    # 
     # if @recipe.valid? & params[:recipe][:name].presence
     
     tag = Tag.where(name: params[:recipe][:name]).first_or_initialize
